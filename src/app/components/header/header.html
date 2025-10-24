@@ -1,0 +1,23 @@
+<header class="flex justify-between items-center max-w-[1920px] m-auto pt-4 px-4 mb-4" #headerRef>
+  <div class="logo max-w-[80px] rounded-full overflow-hidden">
+    <a routerLink='/'>
+      <img ngSrc="https://picsum.photos/80/80" alt="logo" width="80" height="80" priority>
+    </a>
+  </div>
+  <nav class="nav">
+    <ul class="nav_list flex gap-8">
+      @for (navigate of navigation; track navigate) {
+        <li class="relative font-semibold text-[18px]">
+          <a [routerLink]="['/', navigate]">
+            {{navigate | translate}}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+  <div class="lang-switcher" >
+    <button (click)="switchLanguage()" #flagRef class="flag-button">
+      <img [ngSrc]="language === 'pl' ? 'https://flagsapi.com/PL/shiny/64.png' : 'https://flagsapi.com/UA/shiny/64.png'" alt="flag" width="40" height="20">
+    </button>
+  </div>
+</header>

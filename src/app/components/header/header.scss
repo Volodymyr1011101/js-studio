@@ -1,0 +1,20 @@
+.nav_list {
+  li {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      display: block;
+      height: 2px;
+      background-color: black;
+    transition: width 0.2s ease;
+    }
+  }
+  li:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
