@@ -62,7 +62,8 @@ export class Header implements AfterViewInit {
         .8,
         0,
         -80,
-        'power3.out'
+        'power3.out',
+        0
       )
       this.animationService.animationListItems(
         navItems,

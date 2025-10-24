@@ -8,12 +8,12 @@ export class AnimationService {
 
   public animationElementFade(elementRef: ElementRef, duration:number, delay: number = 0, y: number, easy: string = 'power3.out', stagger: number = 0): void {
       gsap.from(elementRef.nativeElement, {
-        y: -80,
+        y,
         opacity: 0,
-        duration: duration,
-        delay: delay,
-        ease: easy,
-        stagger: stagger
+        duration,
+        delay,
+        easy,
+        stagger
       });
   }
 
