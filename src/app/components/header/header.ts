@@ -1,8 +1,8 @@
-import {AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, inject, Inject, PLATFORM_ID, ViewChild} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {RouterLink} from '@angular/router';
 import {isPlatformBrowser, NgOptimizedImage} from '@angular/common';
-import gsap from 'gsap';
+import {AnimationService} from '@app/services/animation.service';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +18,8 @@ import gsap from 'gsap';
 export class Header implements AfterViewInit {
   @ViewChild('headerRef', { static: true }) headerRef!: ElementRef<HTMLHeadElement>;
   @ViewChild('flagRef', { static: true }) flagRef!: ElementRef<HTMLButtonElement>;
+
+  private animationService: AnimationService = inject(AnimationService);
 
   constructor(private translate: TranslateService, @Inject(PLATFORM_ID) private platformId: string) {
     this.translate.addLangs(this.languages);
@@ -55,36 +57,37 @@ export class Header implements AfterViewInit {
     if (isPlatformBrowser(this.platformId)) {
       const navItems = document.querySelectorAll('li');
 
-      gsap.from(this.headerRef.nativeElement, {
-        y: -80,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power3.out'
-      });
-
-      gsap.from(navItems, {
-        opacity: 0,
-        y: -20,
-        duration: 0.5,
-        delay: 0.5,
-        stagger: 0.1,
-        ease: 'power2.out'
-      });
+      this.animationService.animationElementFade(
+        this.headerRef,
+        .8,
+        0,
+        -80,
+        'power3.out'
+      )
+      this.animationService.animationListItems(
+        navItems,
+        -20,
+        0.5,
+        0.4,
+        0.1,
+        'power2.out'
+      );
     }
+  }
+
+  private completeAnimation(): void {
+    this.anim = false;
   }
 
   public animationNavigation(): void {
     const navItems = document.querySelectorAll('li');
-    gsap.from(navItems, {
-      opacity: 0,
-      y: -20,
-      duration: 0.4,
-      delay: 0,
-      stagger: 0.1,
-      ease: 'power2.out',
-      onComplete: () => {
-        this.anim = false;
-      }
-    });
+    this.animationService.animationListItems(
+      navItems,
+      -20,
+      0.4,
+      0,
+      0.1,
+      'power2.out',
+      () => this.completeAnimation());
   }
 }
