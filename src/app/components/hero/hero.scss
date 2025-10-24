@@ -23,9 +23,17 @@
 }
 .title {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.51);
+
+  @media  screen and (max-width: 768px) {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 .js-studio {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
-
+  @media  screen and (max-width: 768px) {
+    font-size: 36px;
+    text-align: center;
+  }
 }
