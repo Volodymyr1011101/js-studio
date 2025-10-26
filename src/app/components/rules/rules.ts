@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import {RulesComponent} from '@app/components/rules/rules';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-rules',
+  selector: 'app-rules-component',
   imports: [
-    RulesComponent
+    TranslatePipe
   ],
   templateUrl: './rules.html',
   styleUrl: './rules.scss',
 })
-export class Rules {
+export class RulesComponent {
 
 }

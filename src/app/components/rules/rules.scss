@@ -1,0 +1,121 @@
+/* ===================================== */
+/* Базові Стилі та Типографіка (Body, H1) */
+/* ===================================== */
+
+h1 {
+  font-size: 2.2em;
+  color: #4a4a4a; /* Темний, але м'який колір */
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #e0e0e0; /* Делікатна лінія підкреслення */
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #007bff; /* Яскраво-синій акцент для розділів */
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 30px;
+}
+
+/* ===================================== */
+/* Стилі Змісту та Роздільників (TOC, HR) */
+/* ===================================== */
+
+.toc {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Легка тінь */
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє переносити пункти на новий рядок */
+  gap: 15px; /* Простір між елементами */
+  justify-content: center;
+}
+
+.toc li {
+  margin: 0;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toc a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #ccc; /* Пунктирна лінія */
+  margin: 40px 0;
+}
+
+/* ===================================== */
+/* Стилі Секцій та Списків (Section, UL/OL) */
+/* ===================================== */
+
+section {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* М'яка тінь для виділення секцій */
+  margin-bottom: 30px;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+/* Стиль для важливих приміток */
+.note {
+  color: #dc3545; /* Червоний колір для застережень */
+  font-weight: bold;
+  background-color: #fff0f0; /* Легкий червонуватий фон */
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #dc3545;
+  margin-top: 15px;
+  list-style: none; /* Прибрати маркер у списку */
+}
+
+/* Стиль для інформації про студію */
+.studio-details {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.9em;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px dashed #ccc;
+}
+
+/* Виділення ключових елементів у тексті */
+strong {
+  color: #0056b3; /* Насичений синій */
+}
