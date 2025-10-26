@@ -1,0 +1,7 @@
+<ul class="flex max-w-[1920px] m-auto">
+  @for (item of items; track item.id) {
+    <li>
+      <img [ngSrc]="item.image" alt="icon" width="300" height="300">
+    </li>
+  }
+</ul>

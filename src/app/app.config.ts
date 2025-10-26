@@ -6,6 +6,8 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import {provideTranslateService} from "@ngx-translate/core";
 import {provideTranslateHttpLoader} from "@ngx-translate/http-loader";
 import { provideHttpClient, withInterceptorsFromDi} from "@angular/common/http";
+import {provideAnimations} from '@angular/platform-browser/animations';
+import {GALLERY_CONFIG, GalleryConfig} from 'ng-gallery';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,5 +23,13 @@ export const appConfig: ApplicationConfig = {
       }),
     }),
     provideHttpClient(withInterceptorsFromDi()),
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        autoHeight: true,
+        imageSize: 'cover'
+      } as GalleryConfig
+    },
+    provideAnimations(),
   ]
 };
