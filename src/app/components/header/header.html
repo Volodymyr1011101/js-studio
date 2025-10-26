@@ -1,11 +1,11 @@
-<header class="flex justify-between items-center max-w-[1920px] m-auto pt-4 px-4 mb-4" #headerRef>
+<header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0]" #headerRef>
   <div class="logo max-w-[80px] rounded-full overflow-hidden">
     <a routerLink='/'>
       <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
     </a>
   </div>
   <nav class="nav">
-    <ul class="nav_list flex gap-8">
+    <ul class="nav_list flex gap-16">
       @for (navigate of navigation; track navigate) {
         <li class="relative font-semibold text-[18px]">
           <a [routerLink]="['/', navigate]">

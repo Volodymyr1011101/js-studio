@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {shortInfo} from '@app/nock_data/short-info';
 import {NgOptimizedImage} from '@angular/common';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-short-info',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    TranslatePipe
   ],
   templateUrl: './short-info.html',
   styleUrl: './short-info.scss',

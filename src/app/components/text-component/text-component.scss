@@ -1,0 +1,30 @@
+.text-block {
+  line-height: 1.2;
+  text-align: center;
+  p:first-of-type:before {
+    content: " ";
+    width: 25px;
+    display: inline-block;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    top: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+  }
+}

@@ -3,12 +3,14 @@ import {NgOptimizedImage} from '@angular/common';
 import {TranslatePipe} from '@ngx-translate/core';
 import gsap from 'gsap';
 import {AnimationService} from '@app/services/animation.service';
+import {Button} from '@app/components/button/button';
 
 @Component({
   selector: 'app-hero',
   imports: [
     NgOptimizedImage,
-    TranslatePipe
+    TranslatePipe,
+    Button
   ],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
