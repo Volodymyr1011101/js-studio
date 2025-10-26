@@ -7,7 +7,7 @@
   <nav class="nav">
     <ul class="nav_list flex gap-16">
       @for (navigate of navigation; track navigate) {
-        <li class="relative font-semibold text-[18px]">
+        <li class="relative font-semibold text-[18px] translate-item">
           <a [routerLink]="['/', navigate]">
             {{navigate | translate}}
           </a>

@@ -59,36 +59,42 @@ export class Header implements AfterViewInit {
 
       this.animationService.animationElementFade(
         this.headerRef,
-        .8,
-        0,
-        -80,
-        'power3.out',
-        0
-      )
+        {
+          y: -80,
+          delay: 0,
+          duration: .8,
+          ease: 'power3.out',
+        })
       this.animationService.animationListItems(
         navItems,
-        -20,
-        0.5,
-        0.4,
-        0.1,
-        'power2.out'
+        {
+          y: -20,
+          duration: .5,
+          opacity: 0,
+          delay: .4,
+          stagger: .1,
+          ease: 'power2.out'
+        }
       );
     }
   }
-
   private completeAnimation(): void {
     this.anim = false;
   }
 
   public animationNavigation(): void {
-    const navItems = document.querySelectorAll('li');
+    const navItems = document.querySelectorAll('.translate-item');
     this.animationService.animationListItems(
       navItems,
-      -20,
-      0.4,
-      0,
-      0.1,
-      'power2.out',
-      () => this.completeAnimation());
+      {
+        y: -20,
+        duration: .3,
+        opacity: 0,
+        delay: 0,
+        stagger: .1,
+        ease: 'power2.out',
+        onComplete: () => this.completeAnimation()
+      }
+    );
   }
 }

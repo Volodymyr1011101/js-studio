@@ -1,6 +1,10 @@
 <main class="m-auto">
   <app-hero></app-hero>
   <app-short-info></app-short-info>
-  <app-text-component [textTranslateKeysArray]="mainText"></app-text-component>
-  <app-gallery></app-gallery>
+  <app-dynamic-render-item>
+    <app-text-component [textTranslateKeysArray]="mainText"></app-text-component>
+  </app-dynamic-render-item>
+  <app-dynamic-render-item>
+    <app-gallery></app-gallery>
+  </app-dynamic-render-item>
 </main>

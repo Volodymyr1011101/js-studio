@@ -1,7 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {TranslatePipe} from '@ngx-translate/core';
-import gsap from 'gsap';
 import {AnimationService} from '@app/services/animation.service';
 import {Button} from '@app/components/button/button';
 
@@ -21,6 +20,6 @@ export class Hero implements OnInit {
   @ViewChild('heroRef', { static: true }) heroRef!: ElementRef<HTMLHeadElement>;
 
   public ngOnInit() {
-    this.animationService.animationElementFade(this.heroRef, 1, 0, -80, 'power3.out', 0)
+    this.animationService.animationElementFade(this.heroRef, {duration: 1, delay: 0, y:-80, opacity:0, ease: 'power3.out'})
   }
 }
