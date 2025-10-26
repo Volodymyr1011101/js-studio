@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-multi-lang": {
+    "js-studio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-multi-lang:build:production"
+              "buildTarget": "js-studio:build:production"
             },
             "development": {
-              "buildTarget": "ng-multi-lang:build:development"
+              "buildTarget": "js-studio:build:development"
             }
           },
           "defaultConfiguration": "development"

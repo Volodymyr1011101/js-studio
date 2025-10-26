@@ -1,13 +1,14 @@
 {
-  "name": "ng-multi-lang",
+  "name": "js-studio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
+    "postbuild:prod": "node generate-sitemap.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ng-multi-lang": "node dist/ng-multi-lang/server/server.mjs"
+    "serve:ssr:js-studio": "node dist/js-studio/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
@@ -57,6 +58,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "sitemap": "^8.0.1",
     "typescript": "~5.8.2"
   }
 }
