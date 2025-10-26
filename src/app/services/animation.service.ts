@@ -38,7 +38,7 @@ export class AnimationService {
         {
           scrollTrigger: {
             trigger: element,
-            toggleActions: 'restart none none none',
+            toggleActions: 'play none none none',
             start: '20px 80%',
           },
           x: 100,
