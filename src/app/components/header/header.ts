@@ -19,6 +19,7 @@ import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 import { Observable } from 'rxjs';
 import {map} from 'rxjs/operators';
 import {BaseComponent} from '@app/components/base-component';
+import {ClickOutsideDirective} from '@app/directives/click-outside';
 
 @Component({
   selector: 'app-header',
@@ -29,7 +30,8 @@ import {BaseComponent} from '@app/components/base-component';
     Burger,
     NgTemplateOutlet,
     AsyncPipe,
-    CommonModule
+    CommonModule,
+    ClickOutsideDirective
   ],
   templateUrl: './header.html',
   styleUrl: './header.scss',
@@ -50,8 +52,8 @@ export class Header extends BaseComponent implements OnInit {
   @ViewChild('browserView' ) public browserViewTpl!: TemplateRef<HTMLElement>;
   @ViewChild('mobileView' ) public mobileViewTpl!: TemplateRef<HTMLElement>;
 
+  public browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
   private animationService: AnimationService = inject(AnimationService);
-  private browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
 
   constructor(private translate: TranslateService) {
     super()

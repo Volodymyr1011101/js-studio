@@ -1,4 +1,4 @@
-<div class="w-[30px] h-[20px] relative" (click)="activateMenu()">
+<div class="w-[30px] h-[20px] relative" (click)="activateMenu()" [class.active]="browserHelpersService.isMenuOpened$ | async">
   <span class="top-line line"></span>
   <span class="middle-line line"></span>
   <span class="bottom-line line"></span>

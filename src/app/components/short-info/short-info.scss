@@ -1,0 +1,11 @@
+.short-info-list {
+  @media screen and (max-width: 768px) {
+    gap: 12px;
+  }
+}
+
+.translate-item {
+  max-width: 110px;
+
+  font-size: 12px;
+}

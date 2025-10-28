@@ -4,6 +4,7 @@
   width: 100%;
   position: absolute;
   border-radius: 20px;
+  transition: all .4s ease;
 }
 .top-line {
   top: 0;
@@ -14,4 +15,18 @@
 }
 .bottom-line {
   bottom: 0;
+}
+
+.active {
+  .middle-line {
+    width: 0;
+  }
+  .top-line {
+    top: 9px;
+    transform: rotate(45deg) translateY(-50%);
+  }
+  .bottom-line {
+    transform: rotate(-45deg) translateY(-50%);
+    bottom: 9px;
+  }
 }

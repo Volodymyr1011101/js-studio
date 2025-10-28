@@ -33,30 +33,30 @@
 </ng-template>
 
 <ng-template #mobileView>
-  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0] fixed z-2 w-full" #headerRef>
+  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0] fixed z-2 w-full" #headerRef appClickOutside (clickOutside)="browserHelpersService.toggleMenu(false)">
+    <div class="logo max-w-[40px] rounded-full overflow-hidden">
+      <a routerLink='/'>
+        <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
+      </a>
+    </div>
     <div class="navigation absolute top-0 w-full left-0  px-2 pt-2 pb-8" [class.opened]="isMenuOpen">
-        <div class="logo max-w-[80px] rounded-full overflow-hidden">
-          <a routerLink='/'>
-            <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
-          </a>
-        </div>
-        <nav class="nav">
+        <nav class="nav mb-4">
           <ul class="nav_list flex flex-col gap-4 items-center">
             @for (navigate of navigation; track navigate) {
               <li class="relative font-semibold text-[18px] translate-item">
-                <a [routerLink]="['/', navigate]">
+                <a [routerLink]="['/', navigate]" (click)="browserHelpersService.toggleMenu(false)">
                   {{navigate | translate}}
                 </a>
               </li>
             }
           </ul>
         </nav>
+      <div class="lang-switcher text-center" >
+        <button (click)="switchLanguage()" #flagRef class="flag-button">
+          <img [ngSrc]="language === 'pl' ? 'https://flagsapi.com/PL/shiny/64.png' : 'https://flagsapi.com/UA/shiny/64.png'" alt="flag" width="40" height="40" priority>
+        </button>
       </div>
-    <div class="lang-switcher" >
-      <button (click)="switchLanguage()" #flagRef class="flag-button">
-        <img [ngSrc]="language === 'pl' ? 'https://flagsapi.com/PL/shiny/64.png' : 'https://flagsapi.com/UA/shiny/64.png'" alt="flag" width="40" height="40" priority>
-      </button>
-    </div>
+      </div>
     <app-burger></app-burger>
   </header>
 

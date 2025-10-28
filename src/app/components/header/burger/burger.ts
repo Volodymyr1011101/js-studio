@@ -1,15 +1,18 @@
 import {Component, inject} from '@angular/core';
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
+import {AsyncPipe} from '@angular/common';
 
 @Component({
   selector: 'app-burger',
-  imports: [],
+  imports: [
+    AsyncPipe
+  ],
   templateUrl: './burger.html',
   styleUrl: './burger.scss',
 })
 export class Burger {
 
-  private browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
+  public browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
 
   public activateMenu(): void {
     const menuState = this.browserHelpersService.isMenuOpened$.getValue()
