@@ -1,0 +1,17 @@
+.line {
+  height: 2px;
+  background-color: #0c0c0c;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+}
+.top-line {
+  top: 0;
+}
+.middle-line {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bottom-line {
+  bottom: 0;
+}

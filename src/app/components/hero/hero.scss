@@ -37,3 +37,10 @@
     text-align: center;
   }
 }
+
+.hero {
+  @media  screen and (max-width: 768px) {
+    min-height: 600px;
+    max-height: 600px;
+  }
+}

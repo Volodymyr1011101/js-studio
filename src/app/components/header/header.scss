@@ -18,3 +18,11 @@
     }
   }
 }
+.navigation {
+  backdrop-filter:  blur(5px);
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.opened {
+  transform: translateY(0%);
+}
