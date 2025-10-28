@@ -33,7 +33,7 @@
 </ng-template>
 
 <ng-template #mobileView>
-  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0] fixed z-2 w-full" #headerRef appClickOutside (clickOutside)="browserHelpersService.toggleMenu(false)">
+  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0] fixed z-2 w-full top-0" #headerRef appClickOutside (clickOutside)="browserHelpersService.toggleMenu(false)">
     <div class="logo max-w-[40px] rounded-full overflow-hidden">
       <a routerLink='/'>
         <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
