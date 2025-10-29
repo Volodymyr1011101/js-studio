@@ -1,8 +1,8 @@
 // screen-resize.service.ts
-import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
+import {HostListener, inject, Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {BehaviorSubject, fromEvent, Observable} from 'rxjs';
 import { map, startWith, debounceTime } from 'rxjs/operators';
-import {isPlatformBrowser} from '@angular/common';
+import {isPlatformBrowser, ViewportScroller} from '@angular/common';
 
 interface ScreenSize {
   width: number;
@@ -15,6 +15,7 @@ interface ScreenSize {
 export class BrowserHelpersService {
   public screen$: Observable<ScreenSize> | null = null;
   public isMenuOpened$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private viewportScroller: ViewportScroller = inject(ViewportScroller);
 
   constructor(@Inject(PLATFORM_ID) private platformId: string ) {
     if (this.isBrowser()) {
@@ -32,11 +33,24 @@ export class BrowserHelpersService {
     }
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+
+  }
+
   public toggleMenu(state: boolean): void {
     this.isMenuOpened$.next(state);
   }
 
   public isBrowser(): boolean {
     return isPlatformBrowser(this.platformId);
+  }
+
+  public scrollTo(target: string): void {
+    this.viewportScroller.scrollToAnchor(target);
+  }
+
+  public scrollToTop(): void {
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 }

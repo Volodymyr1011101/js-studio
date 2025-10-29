@@ -2,7 +2,9 @@
 body {
   font-family: "EB Garamond", serif;
 }
-
+html, body {
+  scroll-behavior: smooth;
+}
 button {
   &:hover {
     cursor: pointer;

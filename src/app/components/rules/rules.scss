@@ -44,6 +44,11 @@ h3 {
   flex-wrap: wrap; /* Дозволяє переносити пункти на новий рядок */
   gap: 15px; /* Простір між елементами */
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 .toc li {
@@ -58,6 +63,9 @@ h3 {
   border: 1px solid #007bff;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
 
 .toc a:hover {
@@ -118,4 +126,9 @@ ul li {
 /* Виділення ключових елементів у тексті */
 strong {
   color: #0056b3; /* Насичений синій */
+}
+main {
+  @media screen and (max-width: 768px) {
+    padding: 50px 0 0 0;
+  }
 }

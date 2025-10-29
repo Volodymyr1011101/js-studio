@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {TranslatePipe} from '@ngx-translate/core';
+import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 
 @Component({
   selector: 'app-rules-component',
@@ -10,5 +11,11 @@ import {TranslatePipe} from '@ngx-translate/core';
   styleUrl: './rules.scss',
 })
 export class RulesComponent {
+
+  private browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
+
+  public scrollToAnchor(anchor: string): void {
+    this.browserHelpersService.scrollTo(anchor);
+  }
 
 }

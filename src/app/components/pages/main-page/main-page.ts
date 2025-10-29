@@ -23,7 +23,7 @@ import {pipe} from 'rxjs';
 export class MainPage extends BaseComponent implements  OnInit {
 
   private browserHelpersService: BrowserHelpersService = inject(BrowserHelpersService);
-
+  public mobile = false;
   public mainText: string[] = [
     'first-text-first-paragraph',
     'first-text-second-paragraph',
@@ -33,5 +33,8 @@ export class MainPage extends BaseComponent implements  OnInit {
 
   public ngOnInit(): void {
       if(!this.browserHelpersService.isBrowser()) {return}
+      this.browserHelpersService.screen$?.subscribe(screen => {
+        this.mobile = screen.width < 768;
+      })
   }
 }
