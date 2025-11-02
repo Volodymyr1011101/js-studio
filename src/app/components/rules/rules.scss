@@ -63,6 +63,7 @@ h3 {
   border: 1px solid #007bff;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s;
+  display: block;
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -128,7 +129,9 @@ strong {
   color: #0056b3; /* Насичений синій */
 }
 main {
+  padding: 15px 0 0 0;
+
   @media screen and (max-width: 768px) {
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }

@@ -1,0 +1,33 @@
+<footer class="bg-[#cfbea0]">
+  <div class="max-w-[1920px] m-auto px-16 pt-6">
+      <div class="footer-grid flex justify-between">
+
+        <div class="footer-column footer-contact">
+          <address>
+            Marszałka Józefa Piłsudskiego 74<br>
+            50-020 Wrocław<br>
+            Poland
+          </address>
+          <ul>
+            <li><a href="tel:+48123456789">Тел: +48 123 456 789</a></li>
+            <li><a href="mailto:help@studio-js.pl">{{ 'Email: help@studio - js.pl' }}</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-nav flex flex-col">
+          <a [routerLink]='"reservation"'>
+            {{ 'reservation' | translate }}
+          </a>
+          <a [routerLink]="'equipment'">{{ 'equipment' | translate }}</a>
+          <a [routerLink]="'rules'">{{ 'rules' | translate }}</a>
+          <a [routerLink]="'kontakt'">{{ 'kontakt' | translate }}</a>
+        </div>
+
+      </div> <hr class="footer-divider">
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2025 JS Studio. All rights reserved. NIP: 8971917484</p>
+      </div>
+
+    </div>
+</footer>

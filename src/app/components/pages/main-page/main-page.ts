@@ -7,6 +7,8 @@ import {DynamicRenderItem} from '@app/components/dynamic-render-item/dynamic-ren
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 import {BaseComponent} from '@app/components/base-component';
 import {pipe} from 'rxjs';
+import {Map} from '@app/components/map/map';
+import {Kontakt} from '@app/components/kontakt/kontakt';
 
 @Component({
   selector: 'app-main-page',
@@ -16,6 +18,8 @@ import {pipe} from 'rxjs';
     Gallery,
     TextComponent,
     DynamicRenderItem,
+    Map,
+    Kontakt,
   ],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss',
@@ -29,6 +33,25 @@ export class MainPage extends BaseComponent implements  OnInit {
     'first-text-second-paragraph',
     'first-text-third-paragraph',
     'first-text-fourth-paragraph',
+  ]
+
+  public SEO_TEXT = [
+    'seo_first_p',
+    'seo_second_p',
+  ]
+
+  public additionalText = [
+    'seo_third_p',
+    'seo_fourth_p',
+  ]
+
+  public mainPageList = [
+    'seo_list_1',
+    'seo_list_2',
+    'seo_list_3',
+    'seo_list_4',
+    'seo_list_5',
+    'seo_list_6',
   ]
 
   public ngOnInit(): void {

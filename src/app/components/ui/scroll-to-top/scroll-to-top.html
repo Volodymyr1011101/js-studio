@@ -1,3 +1,3 @@
-<div class="fixed bottom-[20px] right-[20px]" (click)="scrollToTop()">
+<div class="fixed bottom-[20px] right-[20px] z-10 arrow-show" (click)="scrollToTop()" [class.arrow-hide]="isVisible$ | async">
   <img ngSrc="/images/icons/up-arrow.png" alt="arrow-up" width="40" height="40">
 </div>

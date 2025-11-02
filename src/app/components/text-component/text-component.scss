@@ -28,3 +28,16 @@
     bottom: 0;
   }
 }
+
+.list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  li {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+}

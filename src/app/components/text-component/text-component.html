@@ -1,7 +1,39 @@
-<div class="max-w-[1920px] w-[90%] m-auto text-[19px] text-block relative py-2 mb-8 font-[500]" #scrollContainer>
-  @for (p of textTranslateKeysArray; track p) {
-    <p class="mb-2 scroll-anim">
-      {{p | translate}}
-    </p>
-  }
-</div>
+@if (type === 'regular') {
+  <ng-container [ngTemplateOutlet]="regular"></ng-container>
+} @else if (type === 'with-list') {
+  <ng-container [ngTemplateOutlet]="withList"></ng-container>
+}
+
+<ng-template #regular>
+  <div class="max-w-[1920px] w-[90%] m-auto text-[19px] text-block relative py-2 mb-8 font-[500]" #scrollContainer>
+    @for (p of textTranslateKeysArray; track p) {
+      <p class="mb-2 scroll-anim">
+        {{p | translate}}
+      </p>
+    }
+  </div>
+</ng-template>
+
+
+<ng-template #withList>
+  <div class="max-w-[1920px] w-[90%] m-auto text-[19px] text-block relative py-2 mb-8 font-[500]" #scrollContainer>
+    @for (p of textTranslateKeysArray; track p) {
+      <p class="mb-2 scroll-anim">
+        {{p | translate}}
+      </p>
+    }
+      <ul class="list max-w-[1200px] m-auto">
+        @for (item of list; track item) {
+          <li>{{item | translate}}</li>
+        }
+      </ul>
+
+    @if (additionalText) {
+      @for (t of additionalText; track t) {
+        <p class="mb-2 scroll-anim">
+          {{t | translate}}
+        </p>
+      }
+    }
+  </div>
+</ng-template>
