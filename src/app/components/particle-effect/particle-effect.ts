@@ -65,7 +65,7 @@ export class ParticleEffectComponent implements AfterViewInit, OnDestroy {
   private font!: Font;
   private particleTexture!: THREE.Texture;
   private data = {
-    text: 'FUTURE\nIS NOW',
+    text: 'COMING\nSOON...',
     amount: 1500,
     particleSize: 1,
     particleColor: 0xffffff,
@@ -91,10 +91,9 @@ export class ParticleEffectComponent implements AfterViewInit, OnDestroy {
         this.renderer.dispose();
       }
     }
-    // ... тут можна додати очищення геометрій, матеріалів тощо
   }
 
-  // 6. ОБРОБНИКИ ПОДІЙ (через @HostListener)
+  // 6. ОБРОБНИКИ ПОДІЙ (РЕФАКТОРИНГ ДЛЯ МОБІЛЬНИХ)
   @HostListener('window:resize')
   onWindowResize(): void {
     if (this.camera && this.renderer) {
@@ -108,34 +107,71 @@ export class ParticleEffectComponent implements AfterViewInit, OnDestroy {
     }
   }
 
+  // --- МИША ---
   @HostListener('document:mousedown', ['$event'])
   onMouseDown(event: MouseEvent): void {
-    this.updateMousePosition(event);
+    this.handleInteractionStart(event.clientX, event.clientY);
+  }
+
+  @HostListener('document:mouseup')
+  onMouseUp(): void {
+    this.handleInteractionEnd();
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent): void {
+    this.handleInteractionMove(event.clientX, event.clientY);
+  }
+
+  // --- ДОТИКИ (TOUCH) - ДОДАНО ---
+  @HostListener('document:touchstart', ['$event'])
+  onTouchStart(event: TouchEvent): void {
+    if (event.touches.length > 0) {
+      const touch = event.touches[0];
+      this.handleInteractionStart(touch.clientX, touch.clientY);
+    }
+  }
+
+  @HostListener('document:touchend')
+  onTouchEnd(): void {
+    this.handleInteractionEnd();
+  }
+
+  @HostListener('document:touchmove', ['$event'])
+  onTouchMove(event: TouchEvent): void {
+    if (event.touches.length > 0) {
+      const touch = event.touches[0];
+      this.handleInteractionMove(touch.clientX, touch.clientY);
+    }
+  }
+
+  // --- ЗАГАЛЬНА ЛОГІКА ВЗАЄМОДІЇ (РЕФАКТОРИНГ) ---
+  private handleInteractionStart(clientX: number, clientY: number): void {
+    this.updateMouseCoords(clientX, clientY);
 
     const vector = new THREE.Vector3(this.mouse.x, this.mouse.y, 0.5);
     vector.unproject(this.camera);
     const dir = vector.sub(this.camera.position).normalize();
     const distance = -this.camera.position.z / dir.z;
-    // this.currenPosition = this.camera.position.clone().add( dir.multiplyScalar( distance ) ); // Здається, ця змінна не використовується
+    // this.currenPosition = this.camera.position.clone().add( dir.multiplyScalar( distance ) );
 
     this.buttonDown = true;
     this.data.ease = 0.01;
   }
 
-  @HostListener('document:mouseup')
-  onMouseUp(): void {
+  private handleInteractionEnd(): void {
     this.buttonDown = false;
     this.data.ease = 0.05;
   }
 
-  @HostListener('document:mousemove', ['$event'])
-  onMouseMove(event: MouseEvent): void {
-    this.updateMousePosition(event);
+  private handleInteractionMove(clientX: number, clientY: number): void {
+    this.updateMouseCoords(clientX, clientY);
   }
 
-  private updateMousePosition(event: MouseEvent): void {
-    this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  // Змінено назву та сигнатуру з 'updateMousePosition(event: MouseEvent)'
+  private updateMouseCoords(clientX: number, clientY: number): void {
+    this.mouse.x = (clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(clientY / window.innerHeight) * 2 + 1;
   }
 
   // 7. ЛОГІКА ІНІЦІАЛІЗАЦІЇ
@@ -161,10 +197,21 @@ export class ParticleEffectComponent implements AfterViewInit, OnDestroy {
   }
 
   private initEnvironment(): void {
+    // ❗️ ОПТИМІЗАЦІЯ ДЛЯ МОБІЛЬНИХ (ДОДАНО)
+    // Перевіряємо ширину екрану ПЕРЕД створенням частинок
+    const isMobile = this.browserHelperService.isBrowser() && window.innerWidth < 768;
+
+    if (isMobile) {
+      this.data.text = 'FUTURE\nIS\nNOW'; // Додаємо перенос рядка
+      this.data.textSize = 12; // Зменшуємо розмір тексту
+      this.data.amount = 700; // ❗️ Значно зменшуємо кількість частинок
+      this.data.area = 150; // Зменшуємо зону реакції
+    }
+
     this.scene = new THREE.Scene();
     this.createCamera();
     this.createRenderer();
-    this.setupParticleSystem();
+    this.setupParticleSystem(); // Тепер ця функція використає оновлені 'data'
     this.startAnimationLoop();
   }
 
