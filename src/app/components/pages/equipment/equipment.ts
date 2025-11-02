@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './equipment.scss',
 })
 export class Equipment {
-
+  public inProgress = true;
 }
