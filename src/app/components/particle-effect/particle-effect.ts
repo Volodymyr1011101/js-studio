@@ -202,7 +202,7 @@ export class ParticleEffectComponent implements AfterViewInit, OnDestroy {
     const isMobile = this.browserHelperService.isBrowser() && window.innerWidth < 768;
 
     if (isMobile) {
-      this.data.text = 'FUTURE\nIS\nNOW'; // Додаємо перенос рядка
+      this.data.text = 'COMING\nSOON...'; // Додаємо перенос рядка
       this.data.textSize = 12; // Зменшуємо розмір тексту
       this.data.amount = 700; // ❗️ Значно зменшуємо кількість частинок
       this.data.area = 150; // Зменшуємо зону реакції
