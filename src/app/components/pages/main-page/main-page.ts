@@ -8,7 +8,7 @@ import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 import {BaseComponent} from '@app/components/base-component';
 import {pipe} from 'rxjs';
 import {Map} from '@app/components/map/map';
-import {Kontakt} from '@app/components/kontakt/kontakt';
+import {KontaktComponent} from '@app/components/kontakt-component/kontakt';
 
 @Component({
   selector: 'app-main-page',
@@ -19,7 +19,7 @@ import {Kontakt} from '@app/components/kontakt/kontakt';
     TextComponent,
     DynamicRenderItem,
     Map,
-    Kontakt,
+    KontaktComponent,
   ],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss',
