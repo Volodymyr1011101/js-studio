@@ -1,6 +1,9 @@
 .arrow-show {
   opacity: 1;
   transition: opacity 200ms ease-in;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .arrow-hide {
