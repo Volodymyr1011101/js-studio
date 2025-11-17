@@ -356,22 +356,6 @@ export class Gallery {
         thumb: "/images/gallery/42.webp",
       }
     },
-    {
-      "type": "image",
-      "data": {
-        "alt": "Gallery image",
-        "src": "/images/gallery/43.webp",
-        thumb: "/images/gallery/43.webp",
-      }
-    },
-    {
-      "type": "image",
-      "data": {
-        "alt": "Gallery image",
-        "src": "/images/gallery/44.webp",
-        thumb: "/images/gallery/44.webp",
-      }
-    }
   ]
 
   public isBrowser: boolean;

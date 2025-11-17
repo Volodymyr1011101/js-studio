@@ -1,14 +1,18 @@
 .gallery-resize {
   height: 50vw;
+  padding: 0 250px;
+  background: transparent;
   @media screen and (max-width: 1440px) {
     height: 55vw;
   }
 
   @media screen and (max-width: 1280px) {
     height: 55vw;
+    padding: 0 150px;
   }
 
   @media screen and (max-width: 768px) {
     height: 100vw;
+    padding: 0 0;
   }
 }
