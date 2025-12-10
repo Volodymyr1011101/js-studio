@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {ParticleEffectComponent} from '@app/components/particle-effect/particle-effect';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-equipment',
   imports: [
-    ParticleEffectComponent
+    NgOptimizedImage
   ],
   templateUrl: './equipment.html',
   styleUrl: './equipment.scss',
