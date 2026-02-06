@@ -88,14 +88,6 @@ export class Gallery {
       "type": "image",
       "data": {
         "alt": "Gallery image",
-        "src": "/images/gallery/7.webp",
-        thumb: "/images/gallery/7.webp",
-      }
-    },
-    {
-      "type": "image",
-      "data": {
-        "alt": "Gallery image",
         "src": "/images/gallery/8.webp",
         thumb: "/images/gallery/8.webp",
       }
