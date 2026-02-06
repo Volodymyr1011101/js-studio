@@ -66,6 +66,7 @@ export class Header extends BaseComponent implements OnInit {
   public anim = false;
   public language = 'pl';
   public navigation: string[] = [
+    'home',
     'reservation',
     'equipment',
     'rules',

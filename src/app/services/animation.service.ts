@@ -1,6 +1,5 @@
 import {ElementRef, inject, Inject, Injectable, OnInit, PLATFORM_ID} from '@angular/core';
 import gsap from 'gsap';
-import {isPlatformBrowser} from '@angular/common';
 
 interface configs {
   y?: number;

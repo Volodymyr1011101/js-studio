@@ -17,9 +17,15 @@
       <ul class="nav_list flex gap-16">
         @for (navigate of navigation; track navigate) {
           <li class="relative font-semibold text-[18px] translate-item">
-            <a [routerLink]="['/', navigate]">
-              {{navigate | translate}}
-            </a>
+            @if (navigate === 'home') {
+              <a [routerLink]="['/']">
+                {{navigate | translate}}
+              </a>
+            } @else {
+              <a [routerLink]="['/', navigate]">
+                {{navigate | translate}}
+              </a>
+            }
           </li>
         }
       </ul>

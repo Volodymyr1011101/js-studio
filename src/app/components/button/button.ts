@@ -14,5 +14,4 @@ import {RouterLink} from '@angular/router';
 export class Button {
   @Input() public type: 'large' | 'middle' | 'small' =  'middle';
   @Input() public navigatePath: string = '/';
-
 }
