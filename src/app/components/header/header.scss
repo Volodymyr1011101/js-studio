@@ -1,3 +1,16 @@
+.header {
+  backdrop-filter:  blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform:  translateX(-50%);
+  box-shadow: 0 4px 24.99px 0 rgba(0, 0, 0, 0.25), 0 5px 4px 0 rgba(172, 172, 172, 0.25) inset, 2px 0px 10px -4px #fff inset;
+  color: #fff;
+  z-index: 9999;
+}
+
 .nav_list {
   li {
     &:after {
@@ -8,7 +21,7 @@
       width: 0;
       display: block;
       height: 2px;
-      background-color: black;
+      background-color: #fff;
     transition: width 0.2s ease;
     }
   }
@@ -25,4 +38,12 @@
 }
 .opened {
   transform: translateY(0%);
+}
+.logo {
+  position: absolute;
+  left: 34px;
+  @media screen and (max-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

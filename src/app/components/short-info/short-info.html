@@ -1,6 +1,12 @@
+<div class="relative wrapper">
+  <h2 class="text-[#334D42] font-bold text-[50px] title">{{'our_advantages' | translate}}</h2>
+  <div class="wave absolute top-0 z-[-1] w-full">
+    <app-wave-pattern/>
+  </div>
+
 <ul class="flex max-w-[1920px] m-auto mb-8 items-center justify-center gap-24 flex-wrap short-info-list">
   @for (item of items; track item.id) {
-    <li class="max-w-[140px] flex flex-col items-center between text-center font-bold translate-item">
+    <li class="max-w-[140px] flex flex-col items-center between text-center translate-item">
       <img [ngSrc]="item.image" alt="icon" width="300" height="300">
       <p>
         {{item.text | translate}}
@@ -8,3 +14,4 @@
     </li>
   }
 </ul>
+</div>

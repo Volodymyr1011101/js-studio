@@ -1,32 +1,10 @@
 .text-block {
-  line-height: 1.2;
-  text-align: center;
-  p:first-of-type:before {
-    content: " ";
-    width: 25px;
-    display: inline-block;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 2px;
-    background-color: #000;
-    top: 0;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 2px;
-    background-color: #000;
-    bottom: 0;
-  }
+  line-height: 1;
+  text-align: left;
+  color: #334D42;
+  font-size: 16px;
+  letter-spacing: .3px;
+  font-weight: 400;
 }
 
 .list {
@@ -40,4 +18,13 @@
     list-style-position: inside;
     list-style-type: disc;
   }
+}
+.studio-name {
+  font-family: "Big Shoulders", sans-serif;
+  color: #896C5E;
+  font-size: 24px;
+  font-weight: 400;
+}
+.additional-text {
+  color: #896C5E;
 }

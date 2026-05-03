@@ -1,0 +1,19 @@
+.wave-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent; /* Можна додати колір фону, як на скріншоті */
+}
+svg {
+  display: block;
+}
+.wave-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #E0DDD3; // Твій колір фону
+}
+
+:host ::ng-deep svg {
+  pointer-events: none;
+  display: block;
+}

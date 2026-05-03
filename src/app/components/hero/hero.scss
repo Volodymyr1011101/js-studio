@@ -1,12 +1,14 @@
 .js-studio {
   position: relative;
+  font-family: "Big Shoulders", sans-serif;
+  color: #FFFCF7;
   &:before {
     content: '';
     position: absolute;
     top: 0;
-    width: 80%;
+    width: 120%;
     height: 2px;
-    background: #000;
+    background: #FFFCF7;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -14,16 +16,15 @@
     content: '';
     position: absolute;
     bottom: 0;
-    width: 80%;
+    width: 120%;
     height: 2px;
     left: 50%;
     transform: translateX(-50%);
-    background: #000;
+    background: #FFFCF7;
   }
 }
 .title {
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.51);
-
+  color: #fff;
   @media  screen and (max-width: 768px) {
     font-size: 21px;
     text-align: center;
@@ -31,7 +32,6 @@
 }
 
 .js-studio {
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
   @media  screen and (max-width: 768px) {
     font-size: 36px;
     text-align: center;
@@ -48,7 +48,12 @@
     max-height: 400px;
   }
 }
-
-.hero-image {
-  position: relative !important;
+.name-wrapper {
+  background: linear-gradient(180deg, rgba(51, 77, 66, 0.66) 0%, rgba(0, 0, 0, 0) 159.21%);
+  backdrop-filter:  blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.main-button {
+  position: absolute;
+  bottom: 36px;
 }

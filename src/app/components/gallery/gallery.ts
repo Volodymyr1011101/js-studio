@@ -1,25 +1,20 @@
 import {Component, Inject, PLATFORM_ID} from '@angular/core';
-import {GallerizeDirective} from "ng-gallery/lightbox";
 import {isPlatformBrowser} from "@angular/common";
-import {GalleryComponent, GalleryConfig, GalleryItem} from "ng-gallery";
 
 @Component({
   selector: 'app-gallery',
-  imports: [
-    GallerizeDirective,
-    GalleryComponent
-  ],
+  imports: [],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss',
 })
 export class Gallery {
 
-  public config: GalleryConfig = {
+  public config = {
     scrollBehavior: 'smooth',
     thumbs: true,
     autoHeight: false,
   };
-  public images:  GalleryItem[] = [
+  public images = [
     {
       "type": "image",
       "data": {

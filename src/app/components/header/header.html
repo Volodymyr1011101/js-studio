@@ -7,16 +7,16 @@
 </ng-container>
 
 <ng-template #browserView>
-  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0]" #headerRef>
-    <div class="logo max-w-[80px] rounded-full overflow-hidden">
+  <header class="flex justify-end items-center max-w-[1920px] m-auto py-1 px-4 bg-[#334D4252] header gap-4" #headerRef>
+    <div class="logo max-w-[48px] max-h-[70px] overflow-hidden">
       <a routerLink='/'>
-        <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
+        <img ngSrc="/images/logo.webp" alt="logo" width="96" height="140" priority>
       </a>
     </div>
     <nav class="nav">
-      <ul class="nav_list flex gap-16">
+      <ul class="nav_list flex gap-4">
         @for (navigate of navigation; track navigate) {
-          <li class="relative font-semibold text-[18px] translate-item">
+          <li class="relative font-[400] text-[18px] translate-item">
             @if (navigate === 'home') {
               <a [routerLink]="['/']">
                 {{navigate | translate}}
@@ -39,13 +39,13 @@
 </ng-template>
 
 <ng-template #mobileView>
-  <header class="flex justify-between items-center max-w-[1920px] m-auto py-1 px-4 bg-[#cfbea0] fixed z-2 w-full top-0" #headerRef appClickOutside (clickOutside)="browserHelpersService.toggleMenu(false)">
-    <div class="logo max-w-[40px] rounded-full overflow-hidden">
+  <header class="flex justify-between items-center max-w-[1920px] m-auto py-3 px-4 bg-[#334D4252] fixed z-2 w-full top-0 header" #headerRef appClickOutside (clickOutside)="browserHelpersService.toggleMenu(false)" [style.backdrop-filter]="!isMenuOpen ? 'blur(10px)' : 'none'">
+    <div class="logo max-w-[40px] overflow-hidden">
       <a routerLink='/'>
-        <img ngSrc="/images/logo.webp" alt="logo" width="80" height="80" priority>
+        <img ngSrc="/images/logo.webp" alt="logo" width="96" height="140" priority>
       </a>
     </div>
-    <div class="navigation absolute top-0 w-full left-0  px-2 pt-2 pb-8" [class.opened]="isMenuOpen">
+    <div class="navigation absolute top-0 w-full left-0  px-2 pt-2 pb-8 bg-[#334D4252]" [class.opened]="isMenuOpen">
         <nav class="nav mb-4">
           <ul class="nav_list flex flex-col gap-4 items-center">
             @for (navigate of navigation; track navigate) {

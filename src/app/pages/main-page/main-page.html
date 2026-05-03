@@ -1,22 +1,22 @@
-<main class="m-auto" [class.pt-7]="mobile">
+<main class="m-auto">
   <app-hero></app-hero>
 
   <app-short-info></app-short-info>
 
   <app-dynamic-render-item>
-    <app-text-component [textTranslateKeysArray]="mainText"/>
+    <app-why-we/>
   </app-dynamic-render-item>
 
   <app-dynamic-render-item>
-    <app-gallery></app-gallery>
+<!--    <app-gallery></app-gallery>-->
   </app-dynamic-render-item>
 
   <app-dynamic-render-item>
-    <app-text-component
-      [textTranslateKeysArray]="SEO_TEXT"
-      [additionalText]="additionalText"
-      type="with-list"
-      [list]="mainPageList"/>
+<!--    <app-text-component-->
+<!--      [textTranslateKeysArray]="SEO_TEXT"-->
+<!--      [additionalText]="additionalText"-->
+<!--      type="with-list"-->
+<!--      [list]="mainPageList"/>-->
   </app-dynamic-render-item>
   <app-dynamic-render-item>
     <app-map/>

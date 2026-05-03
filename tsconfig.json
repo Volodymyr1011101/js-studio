@@ -17,7 +17,7 @@
     "baseUrl": "src",
     "paths": {
       "@app/*": ["app/*"],
-      "@pages/*": ["app/components/pages/*"]
+      "@pages/*": ["app/pages/*"]
     }
   },
   "angularCompilerOptions": {

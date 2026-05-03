@@ -1,6 +1,6 @@
 .line {
-  height: 2px;
-  background-color: #0c0c0c;
+  height: 4px;
+  background-color: #E0D9CF;
   width: 100%;
   position: absolute;
   border-radius: 20px;
@@ -22,11 +22,12 @@
     width: 0;
   }
   .top-line {
-    top: 9px;
+    left: -2px;
+    top: 8px;
     transform: rotate(45deg) translateY(-50%);
   }
   .bottom-line {
     transform: rotate(-45deg) translateY(-50%);
-    bottom: 9px;
+    bottom: 8px;
   }
 }

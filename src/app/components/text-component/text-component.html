@@ -1,39 +1,22 @@
-@if (type === 'regular') {
-  <ng-container [ngTemplateOutlet]="regular"></ng-container>
-} @else if (type === 'with-list') {
-  <ng-container [ngTemplateOutlet]="withList"></ng-container>
-}
+<ng-container [ngTemplateOutlet]="regular"></ng-container>
 
 <ng-template #regular>
   <div class="max-w-[1920px] w-[90%] m-auto text-[19px] text-block relative py-2 mb-8 font-[500]" #scrollContainer>
-    @for (p of textTranslateKeysArray; track p) {
+    @for (p of textTranslateKeysArray; track p; let i = $index) {
       <p class="mb-2 scroll-anim">
-        {{p | translate}}
-      </p>
-    }
-  </div>
-</ng-template>
-
-
-<ng-template #withList>
-  <div class="max-w-[1920px] w-[90%] m-auto text-[19px] text-block relative py-2 mb-8 font-[500]" #scrollContainer>
-    @for (p of textTranslateKeysArray; track p) {
-      <p class="mb-2 scroll-anim">
-        {{p | translate}}
-      </p>
-    }
-      <ul class="list max-w-[1200px] m-auto">
-        @for (item of list; track item) {
-          <li>{{item | translate}}</li>
+        @if (studioName && i === 0) {
+          <span class="studio-name">{{studioName}}</span>
         }
-      </ul>
-
-    @if (additionalText) {
-      @for (t of additionalText; track t) {
-        <p class="mb-2 scroll-anim">
-          {{t | translate}}
-        </p>
-      }
+        {{p | translate}}
+      </p>
+    }
+    @for (p of additionalText; track p;) {
+      <p class="scroll-anim additional-text">
+        {{p | translate}}
+        @if (studioName) {
+          <span class="studio-name">{{studioName}}</span>
+        }
+      </p>
     }
   </div>
 </ng-template>
