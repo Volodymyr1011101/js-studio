@@ -8,11 +8,7 @@ import {
 } from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {RouterLink} from '@angular/router';
-import {
-  AsyncPipe, CommonModule,
-  NgOptimizedImage,
-  NgTemplateOutlet
-} from '@angular/common';
+import { AsyncPipe, CommonModule, NgOptimizedImage, NgTemplateOutlet } from '@angular/common';
 import {AnimationService} from '@app/services/animation.service';
 import {Burger} from '@app/components/header/burger/burger';
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
