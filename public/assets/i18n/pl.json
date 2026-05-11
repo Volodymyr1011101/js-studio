@@ -18,6 +18,22 @@
   "height": "Wysoki sufit\n4,5 m",
   "our_advantages": "Nasze zalety:",
   "why_we": "Dlaczego my?",
+  "who_we": "Kim jesteśmy?",
+  "gallery": "Galeria",
+  "wait_for_you": "Czekają na Ciebie:",
+  "cyklorama": "Cyklorama",
+  "cyklorama_description": "Duża cyklorama o długości 8 metrów z łagodnym przejściem w sufit — idealna do tworzenia różnorodnych ujęć podczas sesji zdjęciowych oraz nagrań wideo.",
+  "light": "Światło naturalne",
+  "light_description": "Naturalne światło z dużych okien oraz jasne, minimalistyczne wnętrze — dla miłośników naturalnego oświetlenia.",
+  "working_zone": "Strefy robocze",
+  "working_zone_description": "Strefa do podcastów i pracy z wideo, wyposażona w profesjonalne oświetlenie studyjne oraz możliwość wypożyczenia kamer, mikrofonów i statywów.",
+  "decorations": "Dekoracje",
+  "decorations_description": "Dostosowane do różnych formatów sesji: rodzinnych, dziecięcych, portretów biznesowych, kreatywnych sesji indywidualnych, produktowych oraz kontentowych.",
+  "rent": "Wynajem",
+  "rent_description": "Strefa do podcastów i pracy z wideo, wyposażona w profesjonalne oświetlenie studyjne oraz możliwość wypożyczenia kamer, mikrofonów i statywów.",
+  "courses": "Warsztaty i kursy fotograficzne",
+  "courses_description": "Dla początkujących i praktykujących fotografów — możesz przyjść nawet bez własnego aparatu, o wszystko zadbamy!",
+
 
   "seo_first_p": "Nasze studio fotograficzne przy ul. Piłsudskiego 74/208 to nowoczesna przestrzeń w samym centrum Wrocławia, stworzona z myślą o realizacji sesji foto i wideo.",
   "seo_second_p": "W studiu czeka na Ciebie:",
@@ -151,5 +167,15 @@
   "section6_sub9_text_1": "W przypadku pytań dotyczących przetwarzania danych osobowych prosimy o kontakt JS studio mailowo: help@studio-js.pl",
 
   "section6_sub10_title": "10. Zmiany w polityce prywatności",
-  "section6_sub10_text_1": "Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Zaktualizowana wersja zostanie opublikowana na naszej stronie internetowej."
+  "section6_sub10_text_1": "Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Zaktualizowana wersja zostanie opublikowana na naszej stronie internetowej.",
+
+  "who_we_are_1": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+  "who_we_are_2": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+
+  "faq_title_1": "Jaki jest minimalny i maksymalny czas wynajmu studia?",
+  "faq_answer_1": "Minimalny czas rezerwacji wynosi 2 godziny. Czas rozpoczęcia i zakończenia rezerwacji obejmuje czas na przygotowanie oraz sprzątanie. Prosimy o uwzględnienie tego podczas dokonywania rezerwacji. Maksymalny czas wynajmu studia wynosi 15 godzin, w godzinach od 7:00 do 22:00.",
+  "desc": "Nasze studio fotograficzne przy ul. Piłsudskiego 74/208 to nowoczesna przestrzeń w samym centrum Wrocławia, stworzona z myślą o realizacji sesji zdjęciowych i nagrań wideo.",
+  "desc2": "Tworzymy warunki, w których fotografowie i klienci mogą skupić się wyłącznie na tym, co najważniejsze — na twórczości. Zarezerwuj studio już dziś i stwórz swoje najlepsze kadry we Wrocławiu."
+
+
 }

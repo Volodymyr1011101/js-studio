@@ -3,25 +3,32 @@
 /* ===================================== */
 
 h1 {
-  font-size: 2.2em;
-  color: #4a4a4a; /* Темний, але м'який колір */
+  font-size: 3em;
+  color: #E0D9CF; /* Темний, але м'який колір */
   text-align: center;
   margin-bottom: 30px;
   border-bottom: 3px solid #e0e0e0; /* Делікатна лінія підкреслення */
   padding-bottom: 15px;
+  padding-top: 15px;
+  background: linear-gradient(180deg, rgba(51, 77, 66, 0.66) 0%, rgba(0, 0, 0, 0) 159.21%);
+  font-family: 'Arsenal SC', sans-serif;
+
 }
 
 h2 {
   font-size: 1.6em;
-  color: #007bff; /* Яскраво-синій акцент для розділів */
-  margin-top: 40px;
   margin-bottom: 15px;
+  color: #594840;
+  text-align: center;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 1.2em;
-  color: #555;
+  font-size: 20px;
+  color: #594840;
   margin-top: 30px;
+  margin-bottom:  15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* ===================================== */
@@ -29,12 +36,9 @@ h3 {
 /* ===================================== */
 
 .toc {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Легка тінь */
+  padding: 0 0 45px 0;
+  margin-bottom: 45px;
+  border-bottom: 2px solid #334D42;
 }
 
 .toc ul {
@@ -53,17 +57,19 @@ h3 {
 
 .toc li {
   margin: 0;
+  list-style-type:  none;
 }
 
 .toc a {
   text-decoration: none;
-  color: #007bff;
-  font-weight: 600;
+  color: #594840;
+  font-weight: 400;
   padding: 8px 15px;
-  border: 1px solid #007bff;
-  border-radius: 20px;
+  border: 1px solid #000000;
+  border-radius: 16px;
   transition: background-color 0.3s, color 0.3s;
   display: block;
+  font-size: 28px;
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -86,52 +92,50 @@ hr {
 
 section {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #896C5E66;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* М'яка тінь для виділення секцій */
   margin-bottom: 30px;
+  color: #594840;
+  font-size: 22px;
+  line-height: 1;
 }
-
-ul, ol {
-  padding-left: 20px;
-  margin-top: 10px;
+ul {
+  padding: 10px 0 0 0;
 }
-
 ul li {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 /* Стиль для важливих приміток */
 .note {
-  color: #dc3545; /* Червоний колір для застережень */
+  color: #E0D9CF;
   font-weight: bold;
-  background-color: #fff0f0; /* Легкий червонуватий фон */
-  padding: 10px;
-  border-radius: 5px;
-  border-left: 4px solid #dc3545;
+  background-color: #59484070;
+  padding: 5px 10px;
+  border-left: 18px solid #dc3545;
   margin-top: 15px;
   list-style: none; /* Прибрати маркер у списку */
+  font-size: 20px;
 }
 
 /* Стиль для інформації про студію */
 .studio-details {
-  color: #6c757d;
-  font-style: italic;
-  font-size: 0.9em;
+  color: #E0D9CF;
+  font-size: 20px;
   padding: 10px 15px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  border: 1px dashed #ccc;
+  background-color: #59484070;
+  margin-bottom: 15px;
 }
 
 /* Виділення ключових елементів у тексті */
 strong {
   color: #0056b3; /* Насичений синій */
 }
-main {
-  padding: 15px 0 0 0;
-
-  @media screen and (max-width: 768px) {
-    padding: 60px 0 0 0;
-  }
+.main-wrapper {
+  max-width: 1324px;
+  margin:  0 auto;
+  font-family: "Arsenal SC", sans-serif;
 }

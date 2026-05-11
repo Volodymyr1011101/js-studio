@@ -1,2 +1,82 @@
 @if (isBrowser) {
+  @if (type !== 'gallery') {
+    <div class="card">
+      <p-carousel
+        [value]="galleryImages()"
+        [numVisible]="3"
+        [numScroll]="1"
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions"
+        [nextButtonProps]="{ 'autofocus': false, 'tabindex': -1 }"
+        [prevButtonProps]="{ 'autofocus': false, 'tabindex': -1 }"
+      >
+        <ng-template let-image #item>
+          <div>
+            <!-- Батьківський контейнер задає рамки -->
+            <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+              <p-image
+                [src]="image.src"
+                [alt]="image.alt"
+                [preview]="true"
+                class="w-full h-full object-cover block! aspect-[4/3] image"
+                appendTo="app-why-we"
+                imageClass="w-full h-full object-cover"
+                (onShow)="handleShowImage()"
+                (onHide)="handleShowImage()"
+              />
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #previousicon>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none" style="transform: scale(-1)">
+            <path d="M15.8088 11.4787C16.0539 11.3153 16.2374 11.1111 16.3594 10.866C16.4815 10.6209 16.5435 10.3622 16.5457 10.0898C16.5479 9.8175 16.4864 9.55879 16.3611 9.31369C16.2358 9.06859 16.0523 8.86435 15.8104 8.70095L2.49348 0.245097C2.35732 0.163398 2.21407 0.102396 2.06375 0.0620915C1.91342 0.0217866 1.77017 0.00108932 1.63401 0C1.19828 0 0.817019 0.156862 0.490223 0.470587C0.163427 0.784311 2.86102e-05 1.17211 2.86102e-05 1.63398V18.5457C2.86102e-05 19.0086 0.163427 19.397 0.490223 19.7107C0.817019 20.0244 1.19828 20.1808 1.63401 20.1797C1.77017 20.1797 1.91288 20.159 2.06211 20.1176C2.21135 20.0762 2.35459 20.0152 2.49185 19.9346L15.8088 11.4787Z" fill="#E0D9CF"/>
+          </svg>
+        </ng-template>
+        <ng-template #nexticon>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none">
+            <path d="M15.8088 11.4787C16.0539 11.3153 16.2374 11.1111 16.3594 10.866C16.4815 10.6209 16.5435 10.3622 16.5457 10.0898C16.5479 9.8175 16.4864 9.55879 16.3611 9.31369C16.2358 9.06859 16.0523 8.86435 15.8104 8.70095L2.49348 0.245097C2.35732 0.163398 2.21407 0.102396 2.06375 0.0620915C1.91342 0.0217866 1.77017 0.00108932 1.63401 0C1.19828 0 0.817019 0.156862 0.490223 0.470587C0.163427 0.784311 2.86102e-05 1.17211 2.86102e-05 1.63398V18.5457C2.86102e-05 19.0086 0.163427 19.397 0.490223 19.7107C0.817019 20.0244 1.19828 20.1808 1.63401 20.1797C1.77017 20.1797 1.91288 20.159 2.06211 20.1176C2.21135 20.0762 2.35459 20.0152 2.49185 19.9346L15.8088 11.4787Z" fill="#E0D9CF"/>
+          </svg>
+        </ng-template>
+      </p-carousel>
+    </div>
+  } @else {
+    <div class="card gallery">
+      <p-carousel
+        [value]="galleryImages()"
+        [numVisible]="5"
+        [numScroll]="1"
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions"
+        [nextButtonProps]="{ 'autofocus': false, 'tabindex': -1 }"
+        [prevButtonProps]="{ 'autofocus': false, 'tabindex': -1 }"
+      >
+        <ng-template let-image #item>
+          <div class="px-2">
+            <div class="overflow-hidden rounded-lg shadow-sm">
+              <p-image
+                [src]="image.src"
+                [alt]="image.alt"
+                [preview]="true"
+                class="w-full h-full object-cover block! aspect-[2/3] image"
+                appendTo="app-why-we"
+                imageClass="w-full h-full object-cover rounded-lg"
+                (onShow)="handleShowImage()"
+                (onHide)="handleShowImage()"
+              />
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #previousicon>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none" style="transform: scale(-1)">
+            <path d="M15.8088 11.4787C16.0539 11.3153 16.2374 11.1111 16.3594 10.866C16.4815 10.6209 16.5435 10.3622 16.5457 10.0898C16.5479 9.8175 16.4864 9.55879 16.3611 9.31369C16.2358 9.06859 16.0523 8.86435 15.8104 8.70095L2.49348 0.245097C2.35732 0.163398 2.21407 0.102396 2.06375 0.0620915C1.91342 0.0217866 1.77017 0.00108932 1.63401 0C1.19828 0 0.817019 0.156862 0.490223 0.470587C0.163427 0.784311 2.86102e-05 1.17211 2.86102e-05 1.63398V18.5457C2.86102e-05 19.0086 0.163427 19.397 0.490223 19.7107C0.817019 20.0244 1.19828 20.1808 1.63401 20.1797C1.77017 20.1797 1.91288 20.159 2.06211 20.1176C2.21135 20.0762 2.35459 20.0152 2.49185 19.9346L15.8088 11.4787Z" fill="#E0D9CF"/>
+          </svg>
+        </ng-template>
+        <ng-template #nexticon>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none">
+            <path d="M15.8088 11.4787C16.0539 11.3153 16.2374 11.1111 16.3594 10.866C16.4815 10.6209 16.5435 10.3622 16.5457 10.0898C16.5479 9.8175 16.4864 9.55879 16.3611 9.31369C16.2358 9.06859 16.0523 8.86435 15.8104 8.70095L2.49348 0.245097C2.35732 0.163398 2.21407 0.102396 2.06375 0.0620915C1.91342 0.0217866 1.77017 0.00108932 1.63401 0C1.19828 0 0.817019 0.156862 0.490223 0.470587C0.163427 0.784311 2.86102e-05 1.17211 2.86102e-05 1.63398V18.5457C2.86102e-05 19.0086 0.163427 19.397 0.490223 19.7107C0.817019 20.0244 1.19828 20.1808 1.63401 20.1797C1.77017 20.1797 1.91288 20.159 2.06211 20.1176C2.21135 20.0762 2.35459 20.0152 2.49185 19.9346L15.8088 11.4787Z" fill="#E0D9CF"/>
+          </svg>
+        </ng-template>
+      </p-carousel>
+    </div>
+  }
 }

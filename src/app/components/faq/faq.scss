@@ -1,0 +1,15 @@
+.wrapper {
+  position: relative;
+  padding: 40px 120px 120px;
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    padding: 30px 34px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 30px 8px;
+  }
+  h2 {
+    filter: drop-shadow(1px 2px 1px #334D42);
+    margin: 0 0 45px 0;
+  }
+}

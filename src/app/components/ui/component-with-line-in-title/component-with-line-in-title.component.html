@@ -1,0 +1,14 @@
+<div [class]="parseClassesArrayToString()">
+  <div class="header" [class]="{
+  'text-left': type === 'text-left',
+  'text-right': type === 'text-right',
+  'text-center': type === 'text-center'
+}">
+    <span class="line-before"></span>
+    <h2>
+      {{title | translate}}
+    </h2>
+    <span class="line-after"></span>
+  </div>
+  <ng-content></ng-content>
+</div>

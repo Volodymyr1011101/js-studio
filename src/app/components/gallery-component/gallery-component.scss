@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 64px 34px;
+  @media screen and (max-width: 480px) {
+    padding: 32px 0;
+  }
+}
+:host::ng-deep .header.text-left h2 {
+  @media screen and (max-width: 480px) {
+    font-size: 46px !important;
+  }
+}

@@ -1,0 +1,23 @@
+<component-with-line-in-title title="wait_for_you" type="text-center">
+  <div class="flex justify-between px-[34px] py-[46px] wrapper">
+    @for (item of waitData; track item) {
+      <app-window-opened-component
+        [topImageUrl]="item.topImage"
+        [bottomImageUrl]="item.bottomImage"
+        [backgroundImageUrl]="item.backgroundImage"
+        [description]="item.description"
+        [type]="item.type"
+        [mainLabel]="item.mainLabel"
+      />
+    }
+  </div>
+</component-with-line-in-title>
+<div class="reserv-text pt-[28px] text-center relative">
+  <p class="mb-[38px]">
+    {{'desc2' | translate}}
+  </p>
+  <app-button></app-button>
+  <div class="absolute left-0 w-full top-[-250px] z-[-1]">
+    <app-wave-pattern />
+  </div>
+</div>

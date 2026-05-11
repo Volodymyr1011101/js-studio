@@ -2,6 +2,9 @@
   background: #E0D9CF;
   border: 2.59px solid #334D42;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
   &:after {
     content: "";
     position: absolute;

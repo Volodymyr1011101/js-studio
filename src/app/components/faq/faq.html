@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h2 class="text-[70px] text-[#E0D9CF] font-bold">
+    FAQ
+  </h2>
+  <div class="flex flex-col gap-5">
+    @for (item of faq; track $index; let i = $index) {
+      <app-accordion [title]="item.title" [content]="item.answer" [value]="i"/>
+    }
+  </div>
+</div>

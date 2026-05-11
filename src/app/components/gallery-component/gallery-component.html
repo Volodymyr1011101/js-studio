@@ -1,0 +1,10 @@
+  <component-with-line-in-title title="gallery" type="text-left" [elementClasses]="['relative']">
+    <div class="absolute right-0 scale-x-[-1] top-[-90px] w-full z-[-1]">
+      <app-wave-pattern/>
+    </div>
+    <div class="wrapper">
+      <div class="relative">
+        <app-gallery [images]="images" type="gallery" [numVisibleDesktop]="5" [numVisibleTablet]="3" [numVisiblePhone]="3" [numVisibleTablet2]="3"/>
+      </div>
+    </div>
+  </component-with-line-in-title>

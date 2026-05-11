@@ -1,0 +1,44 @@
+:host::ng-deep {
+  .header.text-center h2 {
+    font-size: 60px;
+    @media screen and (max-width: 480px) {
+      font-size: 46px !important;
+    }
+  }
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 1440px) {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  @media (max-width: 1280px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 3fr;
+    justify-items:  center;
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 34px 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: #334D42;
+    position: absolute;
+    left: 50%;
+    transform:  translateX(-50%);
+    bottom: 0;
+  }
+}
+.reserv-text {
+  font-family:'Arsenal SC', sans-serif;
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 20px;
+}

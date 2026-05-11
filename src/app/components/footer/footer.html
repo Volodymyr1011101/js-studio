@@ -1,17 +1,24 @@
-<footer class="bg-[#cfbea0] footer">
+<footer class="bg-[#334D42] footer text-[#E0D9CF] relative">
   <div class="max-w-[1920px] m-auto px-16 pt-6 footer-wrapper">
       <div class="footer-grid flex justify-between">
 
         <div class="footer-column footer-contact">
-          <address>
-            Marszałka Józefa Piłsudskiego 74<br>
-            50-020 Wrocław<br>
-            Poland
-          </address>
-          <ul>
-            <li><a href="tel:+48536201933">Тел: +48 536 201 933</a></li>
-            <li><a href="mailto:help@studio-js.pl">{{ 'Email: help@studio - js.pl' }}</a></li>
-          </ul>
+          <div>
+            <div class="logo">
+              <a routerLink='/'>
+                <img ngSrc="/images/logo.webp" alt="logo" width="96" height="140" priority>
+              </a>
+            </div>
+            <address>
+              Marszałka Józefa Piłsudskiego 74<br>
+              50-020 Wrocław<br>
+              Poland
+            </address>
+            <ul>
+              <li><a href="tel:+48536201933">tel: +48 536 201 933</a></li>
+              <li><a href="mailto:help@studio-js.pl">{{ 'Email: help@studio - js.pl' }}</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-column footer-nav flex flex-col">

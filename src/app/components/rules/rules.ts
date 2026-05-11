@@ -1,11 +1,13 @@
 import {Component, inject} from '@angular/core';
 import {TranslatePipe} from '@ngx-translate/core';
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-rules-component',
   imports: [
-    TranslatePipe
+    TranslatePipe,
+    NgOptimizedImage
   ],
   templateUrl: './rules.html',
   styleUrl: './rules.scss',

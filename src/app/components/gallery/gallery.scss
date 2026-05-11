@@ -1,18 +1,36 @@
-.gallery-resize {
-  height: 50vw;
-  padding: 0 250px;
-  background: transparent;
-  @media screen and (max-width: 1440px) {
-    height: 55vw;
+:host::ng-deep {
+  .p-carousel-prev-button, .p-carousel-next-button {
+    position: absolute;
+    z-index: 3;
+  }
+  .p-carousel-next-button {
+    right: 0;
+  }
+  .p-carousel-prev-button {
+    left: 0;
+  }
+  .p-carousel-prev-button .p-button, .p-carousel-next-button .p-button{
+    padding: 30px;
+    background-color: #00000080;
+    border-radius: 0 8px 8px 0;
+    @media screen and (max-width: 768px) {
+      padding: 16px;
+    }
   }
 
-  @media screen and (max-width: 1280px) {
-    height: 55vw;
-    padding: 0 150px;
+  .p-carousel-next-button .p-button {
+    border-radius: 8px 0 0 8px;
   }
 
-  @media screen and (max-width: 768px) {
-    height: 100vw;
-    padding: 0 0;
+  .p-button-text.p-button-secondary:not(:disabled):hover {
+    background-color: #00000080;
+  }
+}
+.gallery::ng-deep {
+  .p-carousel-next-button {
+    right: 8px;
+  }
+  .p-carousel-prev-button {
+    left: 8px;
   }
 }

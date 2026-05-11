@@ -1,0 +1,32 @@
+:host::ng-deep {
+  .p-accordionheader, .p-accordionpanel, .p-accordioncontent-content {
+    border: none;
+  }
+  .header {
+    background: #334D42;
+    padding: 17px 34px;
+    color: #E0D9CF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  .p-accordionpanel-active .header {
+    box-shadow: 0px 10px 18px -8px #000;
+  }
+  .p-accordioncontent-content {
+    padding: 20px 34px;
+  }
+  .content {
+    background: #896C5E;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #fff;
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+}

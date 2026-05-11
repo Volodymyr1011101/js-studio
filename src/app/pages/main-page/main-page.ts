@@ -5,19 +5,27 @@ import {DynamicRenderItem} from '@app/components/dynamic-render-item/dynamic-ren
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 import {BaseComponent} from '@app/components/base-component';
 import {Map} from '@app/components/map/map';
-import {KontaktComponent} from '@app/components/kontakt-component/kontakt';
 import {WhyWe} from '@app/components/why-we/why-we';
+import {WhoWe} from "@app/components/who-we/who-we";
+import {GalleryComponent} from "@app/components/gallery-component/gallery-component";
+import {WhatWaitingForYou} from "@app/components/what-waiting-for-you/what-waiting-for-you";
+import {FAQ} from "@app/components/faq/faq";
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-main-page',
-  imports: [
-    Hero,
-    ShortInfo,
-    DynamicRenderItem,
-    Map,
-    KontaktComponent,
-    WhyWe,
-  ],
+    imports: [
+        Hero,
+        ShortInfo,
+        DynamicRenderItem,
+        Map,
+        WhyWe,
+        WhoWe,
+        GalleryComponent,
+        WhatWaitingForYou,
+        FAQ,
+        TranslatePipe,
+    ],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss',
 })
@@ -50,6 +58,6 @@ export class MainPage extends BaseComponent implements  OnInit {
       if(!this.browserHelpersService.isBrowser()) {return}
       this.browserHelpersService.screen$?.subscribe(screen => {
         this.mobile = screen.width < 768;
-      })
+      });
   }
 }

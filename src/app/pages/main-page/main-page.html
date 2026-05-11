@@ -8,20 +8,30 @@
   </app-dynamic-render-item>
 
   <app-dynamic-render-item>
-<!--    <app-gallery></app-gallery>-->
+    <app-who-we/>
   </app-dynamic-render-item>
-
   <app-dynamic-render-item>
-<!--    <app-text-component-->
-<!--      [textTranslateKeysArray]="SEO_TEXT"-->
-<!--      [additionalText]="additionalText"-->
-<!--      type="with-list"-->
-<!--      [list]="mainPageList"/>-->
+    <app-gallery-component/>
+  </app-dynamic-render-item>
+  <app-dynamic-render-item>
+    <div class="pb-8">
+        <div class="bg-[#896C5E] text-center text-[#E0D9CF] text-[24px] px-[64px] desc">
+            <p>
+                {{'desc' | translate}}
+            </p>
+        </div>
+    </div>
+  </app-dynamic-render-item>
+  <app-dynamic-render-item>
+      <app-what-waiting-for-you/>
+  </app-dynamic-render-item>
+  <app-dynamic-render-item>
+      <app-faq />
   </app-dynamic-render-item>
   <app-dynamic-render-item>
     <app-map/>
   </app-dynamic-render-item>
-  <app-dynamic-render-item>
-    <app-kontakt-component/>
-  </app-dynamic-render-item>
+<!--  <app-dynamic-render-item>-->
+<!--    <app-kontakt-component/>-->
+<!--  </app-dynamic-render-item>-->
 </main>

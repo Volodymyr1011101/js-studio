@@ -1,0 +1,49 @@
+.line-before, .line-after {
+  height: 2px;
+  background-color: #334D42;
+  display: inline-block;
+}
+.header {
+  display: flex;
+  align-items: flex-end;
+  h2 {
+    color: #334D42;
+    font-size: 70px;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1;
+    padding: 0 24px;
+  }
+}
+.text-right {
+  .line-before {
+    width: 65%;
+  }
+  .line-after {
+    width: 10%;
+    flex-grow: 1;
+  }
+}
+.text-left {
+  .line-before {
+    width: 10%;
+    flex-grow: 1;
+  }
+  .line-after {
+    width: 65%;
+  }
+}
+.text-center {
+  .line-before {
+    width: 45%;
+    flex-grow: 1;
+  }
+  .line-after {
+    width: 45%;
+    flex-grow: 1;
+  }
+}
+.line-before, .line-after {
+  position: relative;
+  bottom: 16px;
+}

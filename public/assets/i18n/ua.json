@@ -18,6 +18,22 @@
   "height": "Висока стеля 4,5 м",
   "our_advantages": "Наші Переваги:",
   "why_we": "Чому ми?",
+  "who_we": "Хто ми?",
+  "gallery": "Галерея",
+  "wait_for_you": "На вас чекають:",
+  "cyklorama": "Циклорама",
+  "cyklorama_description": "Велика циклорама довжиною 8 метрів з плавним переходом до стелі — ідеальна для отримання різноманітних кадрів під час фотографування та запису відео.",
+  "light": "Природне Світло",
+  "light_description": "Природне світло з великих вікон та світлий, мінімалістичний інтер'єр — для поціновувачів природного освітлення.",
+  "working_zone": "Робочі зони",
+  "working_zone_description": "Зона для подкастів та роботи з відео, оснащена професійним студійним освітленням та можливістю оренди камер, мікрофонів і штативів.",
+  "decorations": "Декорації",
+  "decorations_description": "Адаптовані до різних форматів сесій: сімейних, дитячих, бізнес-портретів, креативних індивідуальних, продуктових та контентних зйомок.",
+  "rent": "Оренда",
+  "rent_description": "Зона для подкастів та роботи з відео, оснащена професійним студійним освітленням та можливістю оренди камер, мікрофонів і штативів.",
+  "courses": "Майстер-класи та фотокурси",
+  "courses_description": "Для початківців та практикуючих фотографів — ви можете прийти навіть без власного фотоапарата, ми про все подбаємо!",
+
 
   "seo_first_p": "Наша фотостудія на вул. Piłsudskiego 74/208 – це сучасний простір у самому центрі Вроцлава, створений для реалізації фото- та відеосесій.",
   "seo_second_p": "У студії на вас чекає:",
@@ -135,5 +151,14 @@
   "section6_sub9_title": "9. Контактні дані",
   "section6_sub9_text_1": "У разі питань щодо обробки персональних даних, будь ласка, зв'яжіться з JS studio електронною поштою: help@studio-js.pl",
   "section6_sub10_title": "10. Зміни в політиці конфіденційності",
-  "section6_sub10_text_1": "Ми залишаємо за собою право вносити зміни до цієї Політики конфіденційності. Оновлена версія буде опублікована на нашому веб-сайті."
+  "section6_sub10_text_1": "Ми залишаємо за собою право вносити зміни до цієї Політики конфіденційності. Оновлена версія буде опублікована на нашому веб-сайті.",
+
+  "who_we_are_1": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+  "who_we_are_2": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+
+  "faq_title_1": "Який мінімальний/максимальний термін для аренди  студії?",
+  "faq_answer_1": "Мінімальний час бронювання – 2 години. Час заселення та виселення включає час на підготовку та прибирання. Будь ласка, врахуйте це під час бронювання. Максимальний час оренди студії – 15 годин, з 7:00 до 22:00.",
+  "desc": "Наша фотостудія на вул. Piłsudskiego 74/208 – це сучасний простір у самому центрі Вроцлава, створений для реалізації фото- та відеосесій.",
+  "desc2": "Ми створюємо умови, в яких фотографи та клієнти можуть зосередитися виключно на найважливішому — на творчості.\n    Забронюйте студію вже сьогодні та створіть свої найкращі кадри у Вроцлаві."
+
 }

@@ -1,6 +1,7 @@
 import {ElementRef, inject, Inject, Injectable, OnInit, PLATFORM_ID} from '@angular/core';
 import gsap from 'gsap';
-
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; // якщо використовуєте
+gsap.registerPlugin();
 interface configs {
   y?: number;
   x?: number;

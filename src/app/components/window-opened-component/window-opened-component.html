@@ -1,0 +1,36 @@
+<div [style.background-image]="'url(' + backgroundImageUrl + ')'" class="wrapper relative">
+  <div class="text">
+    <p>
+      {{description | translate}}
+    </p>
+  </div>
+  <ng-container [ngTemplateOutlet]="type === 'bottom' ? topImage : leftImage"></ng-container>
+  <ng-container [ngTemplateOutlet]="type === 'bottom' ? bottomImage : rightImage"></ng-container>
+  <div class="label">
+    <p>{{mainLabel | translate}}</p>
+  </div>
+</div>
+
+<ng-template #bottomImage>
+  <div class="bottom-image">
+    <img [ngSrc]="bottomImageUrl" alt="image" fill>
+  </div>
+</ng-template>
+
+<ng-template #topImage>
+  <div class="top-image">
+    <img [ngSrc]="topImageUrl" alt="image" fill>
+  </div>
+</ng-template>
+
+<ng-template #leftImage>
+  <div class="left-image">
+    <img [ngSrc]="topImageUrl" alt="image" fill>
+  </div>
+</ng-template>
+
+<ng-template #rightImage>
+  <div class="right-image">
+    <img [ngSrc]="bottomImageUrl" alt="image" fill>
+  </div>
+</ng-template>
