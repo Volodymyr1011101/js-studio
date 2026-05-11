@@ -26,6 +26,11 @@
       display: none;
     }
     .p-image-close-button {
+      svg {
+        display: none;
+      }
+    }
+    .p-image-close-button {
       width: 100%;
     }
   }
