@@ -57,36 +57,27 @@ export const faq = [
     answer: 'faq_answer_1',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_2',
+    answer: 'faq_answer_2',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_3',
+    answer: 'faq_answer_3',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_4',
+    answer: 'faq_answer_4',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_5',
+    answer: 'faq_answer_5',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_6',
+    answer: 'faq_answer_6',
   },
   {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
+    title: 'faq_title_7',
+    answer: 'faq_answer_7',
   },
-  {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
-  },
-  {
-    title: 'faq_title_1',
-    answer: 'faq_answer_1',
-  }
-
 ]

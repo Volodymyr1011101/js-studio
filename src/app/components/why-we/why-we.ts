@@ -19,7 +19,9 @@ export class WhyWe {
   public mainText: string[] = [
     'first-text-first-paragraph',
     'first-text-second-paragraph',
-    'first-text-third-paragraph',
+    "first-text-third-paragraph",
+    "first-text-fourth-paragraph",
+    "first-text-fifth-paragraph",
   ]
 
   public name: string = 'JS Studio';

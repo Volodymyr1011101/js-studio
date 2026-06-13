@@ -7,7 +7,7 @@
 <ul class="flex max-w-[1920px] m-auto mb-8 items-center justify-center gap-24 flex-wrap short-info-list">
   @for (item of items; track item.id) {
     <li class="max-w-[140px] flex flex-col items-center between text-center translate-item">
-      <img [ngSrc]="item.image" alt="icon" width="300" height="300">
+      <img [ngSrc]="item.image" alt="icon" width="300" height="300" placeholder="data:image/webp;base64,UklGRmQAAABXRUJQVlA4WAoAAAAQAAAAEwAIEwAAQUxQSB0AAAAAEC6SJiIiJiIiJiIiJiIiJiIiJiIiJiIiJiIiIiIAVlA4IDQAAADwAQCdASoUABQAAgA0JaACdAE7v8ACgAD++3v6/v76/v76/v76/v76/v76/v76/v76/v4AAA==">
       <p>
         {{item.text | translate}}
       </p>
