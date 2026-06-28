@@ -1,0 +1,15 @@
+<div class="item-wrapper">
+  <div class="title-wrapper">
+    <app-title-with-gradient>
+      <h3 class="title">{{ name | translate }}</h3>
+    </app-title-with-gradient>
+  </div>
+  <img [ngSrc]="image" alt="equipment-item" width="400" height="400" />
+  <div class="name-wrapper">
+    <app-title-with-gradient>
+      <h3 class="name">
+        {{ addName | translate }}
+      </h3>
+    </app-title-with-gradient>
+  </div>
+</div>

@@ -1,5 +1,75 @@
-<div class="w-full h-full equipment flex justify-center max-w-[100%]">
-<!--  <app-particle-effect></app-particle-effect>-->
-  <img ngSrc="/images/Sprzet_main.webp" alt="equipment" width="1329" height="2362" class="w-1/4 eq-image">
-  <img ngSrc="/images/Sprzet_dodatkowy.webp" alt="equipment" width="1329" height="2362" class="w-1/4 eq-image">
+<div class="">
+  <div class="relative min-h-[200px] mb-[72px]">
+    <img ngSrc="/images/main_photos.webp" alt="main_photo" fill class="object-cover" priority>
+  </div>
+  <app-title-with-gradient>
+    <h1 class="title">{{ 'helper' | translate }}</h1>
+  </app-title-with-gradient>
+
+  <div class="assistant-wrapper">
+    <p>
+      {{ 'assistant_description' | translate }}
+    </p>
+    <div>
+      <img ngSrc="/images/assistant.JPG" alt="assistant" width="3186" height="3146" class="object-cover" priority>
+    </div>
+  </div>
+  <app-title-with-gradient>
+    <h2 class="title">
+      {{ 'equipments' | translate }}
+    </h2>
+  </app-title-with-gradient>
+  <div class="equipment-wrapper">
+    @for (item of equipmentItems; track item.id) {
+      <div (click)="openItem(detailTemplate, item)"
+           (keydown.enter)="openItem(detailTemplate, item)"
+           tabindex="0"
+           style="cursor: pointer;" >
+        <app-equipment-item [name]="item.name" [image]="item.src" [addName]="item.addName"></app-equipment-item>
+      </div>
+    }
+  </div>
+
+  <app-title-with-gradient>
+    <h2 class="title">
+      {{ 'additional-equipment' | translate }}
+    </h2>
+    <p class="booking-note">
+      {{ 'EQUIPMENT_PAGE.BOOKING_NOTE' | translate }}
+    </p>
+  </app-title-with-gradient>
+
+  <p class="price-info mb-10">
+    {{ 'EQUIPMENT_PAGE.PRICE_INFO' | translate }}
+    <span class="click-prompt">{{ 'EQUIPMENT_PAGE.CLICK_PROMPT' | translate }}</span>
+  </p>
+
+  <div class="equipment-wrapper">
+    @for (item of additionalEquipmentData; track item.id) {
+      <div (click)="openItem(detailTemplate, item)"
+           (keydown.enter)="openItem(detailTemplate, item)"
+           tabindex="0"
+           style="cursor: pointer;" >
+        <app-equipment-item [name]="item.name" [image]="item.src" [addName]="item.addName"></app-equipment-item>
+      </div>
+    }
+  </div>
 </div>
+
+<ng-template #detailTemplate let-item>
+  <div class="wrapper">
+    <div class="item-wrapper">
+      <div>
+        <img [ngSrc]="item.src" [alt]="item.alt" width="400" height="400" />
+      </div>
+      <div>
+        <p class="second-name">{{ item.addName | translate }}</p>
+        <p class="name">{{ item.name | translate }}</p>
+        <p class="description">{{ item.description | translate }}</p>
+      </div>
+    </div>
+    @if(item.price) {
+      <p class="price-info">${{ item.price | translate }}</p>
+    }
+  </div>
+</ng-template>

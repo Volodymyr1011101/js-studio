@@ -3,3 +3,107 @@
     width: 50%;
   }
 }
+
+.assistant-wrapper {
+  display: flex;
+  padding: 0 50px 40px;
+  gap: 100px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1;
+  color: #334D42;
+  p {
+    max-width: 60%;
+  }
+  @media (max-width: 1280px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      max-width: 100%;
+      font-size: 18px;
+    }
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px 16px;
+  }
+}
+
+.equipment-wrapper {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr;
+  padding: 0 70px 40px;
+  @media (max-width: 1200px) {
+    padding: 0 16px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 16px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 768px) {
+    padding: 0 16px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 500px) {
+    padding: 0 16px 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 365px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item-wrapper {
+  display: flex;
+  gap: 16px;
+  > div {
+    max-width: 355px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.second-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.name {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px 0 0 0;
+}
+
+.title {
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+    padding: 0 32px;
+  }
+}
+
+.booking-note {
+  font-size: 16px;
+}
+
+.price-info {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #334D42;
+  text-align: center;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+.wrapper .price-info {
+  text-align: right;
+}

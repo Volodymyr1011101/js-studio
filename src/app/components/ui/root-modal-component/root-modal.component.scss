@@ -1,0 +1,24 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); // Стильний Sci-Fi / Glassmorphism ефект для фону
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; // Завжди поверх усього
+}
+
+.modal-content {
+  background: #E0D9CF; // Або ваш колір теми
+  color: #334D42;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}

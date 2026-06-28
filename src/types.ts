@@ -10,3 +10,13 @@ export interface WindowOpenedItems {
   mainLabel: string;
   type: 'bottom' | 'side';
 }
+
+export interface EquipmentItemType {
+  id: number;
+  src: string;
+  alt: string;
+  description: string;
+  name: string;
+  addName: string;
+  price?: string;
+}

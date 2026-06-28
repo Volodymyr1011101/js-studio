@@ -192,7 +192,77 @@
   "faq_answer_7": "Wszystkie zapowiedzi nadchodzących warsztatów, masterclassów i wydarzeń fotograficznych publikujemy na instagramie.",
 
   "desc": "Znajdujemy się w samym centrum miasta, zaledwie kilka kroków od Dworca Głównego PKP. Dzięki temu nasze studio jest doskonale skomunikowane — to idealny wybór zarówno dla mieszkańców Wrocławia, jak i dla klientów czy modeli dojeżdżających z innych miast. ul. Piłsudskiego 74/208, Wrocław (JS studio)",
-  "desc2": "Tworzymy warunki, w których fotografowie i klienci mogą skupić się wyłącznie na tym, co najważniejsze — na twórczości. Zarezerwuj studio już dziś i stwórz swoje najlepsze kadry we Wrocławiu."
+  "desc2": "Tworzymy warunki, w których fotografowie i klienci mogą skupić się wyłącznie na tym, co najważniejsze — na twórczości. Zarezerwuj studio już dziś i stwórz swoje najlepsze kadry we Wrocławiu.",
 
+  "helper": "Asystent oświetlenia",
+  "equipments": "Wyposażenie (wliczone w cenę wynajmu)",
+  "additional-equipment": "Dodatkowe wyposażenie",
 
+  "EQUIPMENT_TYPES": {
+    "FLASH": "Lampa błyskowa",
+    "CONTINUOUS": "Światło ciągłe",
+    "CONTINUOUS_RGBW": "Światło ciągłe RGBW",
+    "BOOM": "Statyw żuraw",
+    "SOFTBOX_SPHERE": "Softbox sferyczny",
+    "BEAUTY_DISH": "Nasadka portretowa",
+    "STRIPBOX": "Softbox stripbox",
+    "OCTABOX": "Softbox octa",
+    "SPOTLIGHT": "Strumienica optyczna",
+    "LENSES": "Obiektywy wymienne",
+    "GOBO_SET": "Zestaw masek Gobo",
+    "REFLECTOR": "Reflektor",
+    "FRESNEL": "Soczewka Fresnela",
+    "FAN": "Wiatrak studyjny",
+    "SPEAKER": "Głośnik bezprzewodowy",
+    "TRIGGER": "Synchronizator",
+    "UMBRELLA": "Parasol fotograficzny",
+    "STEAMER": "Parownica do ubrań",
+    "FLAGS": "Flagi studyjne",
+    "FROST_FRAME": "Rama dyfuzyjna",
+    "SMOKE_MACHINE": "Wytwornica dymu",
+    "PROJECTOR": "Projektor",
+    "LED_TUBE": "Tuba LED",
+    "CAMERA": "Aparat fotograficzny",
+    "LENS": "Obiektyw"
+  },
+  "EQUIPMENT_DESCRIPTIONS": {
+    "GODOX_AD600": "Niezwykle mocna (600J) profesjonalna lampa błyskowa z idealnym odwzorowaniem kolorów i błyskawicznym ładowaniem. Stworzona do dynamicznych sesji fashion, reklamy i skomplikowanych schematów oświetleniowych.",
+    "NANLITE_FC500B": "Potężne (520 W) ledowe źródło światła ciągłego z regulacją temperatury barwowej (2700K–6500K). Idealne do produkcji wideo, wywiadów i fotografii, gdzie liczy się wysoka jasność i precyzyjny balans bieli.",
+    "BIG_BOOM": "Boom posiada konstrukcję równoległoboczną, która ułatwia precyzyjne podnoszenie lub opuszczanie źródła światła bez zmiany kąta padania światła w stosunku do fotografowanego obiektu. Posiada precyzyjne łożyska zapewniające wyjątkowo płynny ruch.",
+    "NANLITE_FC300C": "Profesjonalny monolight LED światła ciągłego (300 W) z pełnokolorowym trybem RGBW. Pozwala na uzyskanie dowolnego odcienia, kolorowych efektów specjalnych lub klasycznego białego światła.",
+    "GODOX_LE600BI": "Ekstremalnie mocne (610 W) źródło światła ciągłego LED typu All-in-One z regulacją temperatury (2800K–6500K). Zapewnia potężny strumień światła, perfekcyjne odwzorowanie kolorów.",
+    "GODOX_CS85D": "Softbox sferyczny o zwiększonej średnicy (85 cm) i kącie rozproszenia 360°. Konstrukcja szybkiego montażu pozwala błyskawicznie wypełnić studio miękkim, przestrzennym i bezcieniowym światłem.",
+    "BEAUTY_DISH": "Modyfikator do idealnego oświetlenia portretowego. Daje charakterystyczne, ukierunkowane, ale miękkie światło z kontrastowymi cieniami i pięknym okrągłym odbiciem w oczach. Świetnie podkreśla teksturę skóry i makijaż.",
+    "STRIPBOX": "Wąskie softboxy podłużne, idealne do tworzenia smukłych blików, światła konturowego w portretach całej sylwetki oraz do fotografii aktów i błyszczących przedmiotów. W zestawie z gridem.",
+    "OCTABOX": "Uniwersalne, ośmiokątne softboxy o dużej średnicy. Tworzą przestrzenne, maksymalnie miękkie i naturalne światło, imitujące to z okna. Doskonały wybór do portretów grupowych i indywidualnych.",
+    "GODOX_BLP": "Strumienica optyczna do projekcji ostrych masek gobo. Pozwala tworzyć geometryczne plamy światła, pasy, imitację żaluzji lub światła przez okno.",
+    "GODOX_BLP_LENSES": "Wymienne obiektywy do strumienicy optycznej 65, 85 i 150 mm. Pozwalają kontrolować wielkość i ostrość plamy świetlnej. 65 mm daje szeroką wiązkę z bliska, 85 mm to uniwersalny standard, a 150 mm jest idealny do precyzyjnych detali z dużej odległości.",
+    "GODOX_GOBO_SET": "Ogromna kolekcja 50 masek gobo do tworzenia artystycznych efektów świetlnych. Nieograniczone możliwości dla sesji kreatywnych i komercyjnych.",
+    "REFLECTOR": "Modyfikatory do tworzenia ukierunkowanego, twardego i kontrastowego strumienia światła. Używane samodzielnie dla uzyskania głębokich cieni lub jako baza do pracy z parasolkami fotograficznymi i wrotami.",
+    "NANLITE_FL20G": "Soczewka Fresnela z regulowanym kątem skupienia 10-45 stopni. Koncentruje strumień światła, wielokrotnie zwiększając jego jasność i tworząc klasyczną „filmową” wiązkę o miękkich krawędziach.",
+    "WIATRAK": "Profesjonalny wiatrak studyjny z regulacją siły nadmuchu. Niezastąpiony do tworzenia dynamicznych ujęć: efektownego rozwiewania włosów, ubrań czy trenów sukien w ruchu.",
+    "GLOSNIK": "Bezprzewodowy głośnik o potężnym, czystym brzmieniu i głębokim basie. Pomaga stworzyć odpowiednią atmosferę na planie, rozluźnić modela i złapać właściwy rytm. Łatwo łączy się przez Bluetooth.",
+    "GODOX_X3PRO": "Nadajnik nowej generacji z kolorowym, dotykowym ekranem. Cechuje się ultrakompaktową obudową i błyskawiczną reakcją. Zapewnia bezbłędne zdalne sterowanie wszystкими lampami Godox. Dostępny dla różnych systemów aparatów.",
+    "PARASOL": "Ogromna parasolka paraboliczna o głębokim profilu. Srebrne wnętrze zapewnia wysoki kontrast, maksymalną wydajność światła i świetne podkreślenie tekstur, a gigantyczna średnica (180 cm) pozwala na równomierne oświetlenie całej sylwetki lub dużych grup.",
+    "PAROWNICA": "Profesjonalne parownice do ubrań — niezbędne narzędzie na każdym planie zdjęciowym. Pozwalają błyskawicznie i bezpiecznie wyprasować w pionie nawet najdelikatniejsze tkaniny, odświeżyć kostiumy i przygotować garderobę do sesji prosto na wieszaku.",
+    "FLAGI": "Duże zastawki studyjne (flagi 210x110 cm) do profesjonalnej kontroli światła. Czarna strona idealnie odcina zbędne światło i pogłębia cienie, a biała działa jako miękka płaszczyzna odbijająca.",
+    "FROST_FRAME": "Wielkogabarytowy panel dyfuzyjny do profesjonalnej kontroli nad światłem. Pozwala zmienić ostre, kierunkowe światło słońca lub lamp studyjnych w idealnie miękkie, kinowe oświetlenie wielkich scen i planów grupowych.",
+    "SMOKE_MACHINE": "Urządzenie do tworzenia efektów atmosferycznych w kadrze. Pozwala uwidocznić i pięknie podkreślić promienie światła (smugi), dodać głębi, tajemniczości oraz kinowego klimatu do sesji zdjęciowych i klipów wideo.",
+    "PROJECTOR": "Narzędzie do kreatywnych sesji z projekcjami cyfrowymi. Pozwala wyświetlać na tło lub modela dowolne tekstury, obrazy, napisy czy dynamiczne wideo, otwierając nieograniczone możliwości dla fotografii koncepcyjnej i artystycznej.",
+    "LED_TUBE": "Profesjonalna tuba LED RGBW z wbudowanym akumulatorem. Zapewnia precyzyjną regulację kolorów, płynne ściemnianie i kinowe efekty specjalne. Idealna do malowania światłem, kreatywnego podświetlenia tła, teledysków oraz jako stylowy element scenografii w kadrze.",
+    "CAMERA": "Pełnoklatkowy bezlusterkowiec o rozdzielczości 30.3 MP. Oferuje genialny autofokus, doskonałą plastykę obrazu, świetną pracę przy wysokim ISO oraz możliwość nagrywania wideo 4K. Idealna, niezawodna baza do każdego rodzaju fotografii komercyjnej.",
+    "LENS": "Klasyczny, niezwykle jasny obiektyw stałoogniskowy. Idealny do naturalnych portretów dzięki perspektywie zbliżonej do ludzkiego oka. Duży otwór przysłony f/1.8 pozwala na piękne rozmycie tła i pracę przy słabym świetle."
+  },
+  "EQUIPMENT_PRICES": {
+    "PRICE_30": "Cena 30 zł/sesja",
+    "PRICE_50": "Cena 50 zł/sesja"
+  },
+  "EQUIPMENT_PAGE": {
+    "BOOKING_NOTE": "(podczas rezerwacji proszę podać)",
+    "PRICE_INFO": "Cena dodatkowego wyposażenia podana jest za jedną rezerwację. Oznacza to, że jeśli wynajem studia trwa dłużej niż jedną godzinę, cena pozostaje bez zmian i nie ma potrzeby dopłacania — nawet przy rezerwacji na 10 godzin.",
+    "CLICK_PROMPT": "Aby zobaczyć cenę oraz dodatkowe informacje, kliknij na interesujący Cię sprzęt."
+  },
+  "AD600": "3 x Godox AD600 Pro",
+  "AD600_description": "Niezwykle mocna (600J) profesjonalna \nlampa błyskowa z idealnym odwzorowaniem kolorów i \nbłyskawicznym ładowaniem. Stworzona do \ndynamicznych sesji fashion, reklamy i skomplikowanych \nschematów oświetleniowych.",
+  "assistant_description": "Jak to działa?\n - Pełne przygotowanie: Ty mówisz nam, jaki efekt chcesz osiągnąć (lub pokazujesz inspiracje/refki), a nasz asystent ustawia lampy na jej początku.\n - Brak stresu: Jeśli zupełnie nie masz doświadczenia ze światłem studyjnym — nie martw się. Pokażemy Ci, jak wszystko działa, i dostosujemy parametry do Twojego aparatu lub smartfona.\n - Oszczędność czasu: Nie tracisz 30 cennych minut rezerwacji na przestawianie statywów.\n\nKoszt usługi to tylko 50 PLN za całe rezerwacje (niezależnie od liczby godzin).Dodaj opcję „Asystent oświetlenia” podczas rezerwacji studia online i ciesz się idealnymi kadrami od pierwszego błysku!"
 }
