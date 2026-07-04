@@ -21,6 +21,10 @@ h2 {
   color: #594840;
   text-align: center;
   font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    font-size:  1.15em;
+  }
 }
 
 h3 {
@@ -72,6 +76,7 @@ h3 {
   font-size: 28px;
   @media screen and (max-width: 768px) {
     display: block;
+    font-size: 20px;
   }
 }
 

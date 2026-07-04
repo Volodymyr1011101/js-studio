@@ -1,3 +1,15 @@
-<div class="w-full container flex justify-center items-center m-auto">
-  <app-kontakt-component/>
+<div class="relative min-h-[200px] mb-[72px]">
+  <img ngSrc="/images/main_photos.webp" alt="main_photo" fill class="object-cover" priority>
+</div>
+<div class="w-full container flex items-start m-[auto] mb-16">
+  <div class="contact">
+    <h2>
+      {{'kontakt' | translate}}
+    </h2>
+    <app-kontakt-component/>
+  </div>
+  <div class="map">
+    <h2>{{'map' | translate}}</h2>
+    <app-map/>
+  </div>
 </div>
