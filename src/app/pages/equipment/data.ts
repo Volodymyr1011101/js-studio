@@ -9,7 +9,7 @@ export const equipmentData: EquipmentItemType[] = [
   { id: 6, name: 'Godox CS85D', addName: 'EQUIPMENT_TYPES.SOFTBOX_SPHERE', description: 'EQUIPMENT_DESCRIPTIONS.GODOX_CS85D', src: '/images/equipment/7.png', alt: 'equipment-item' },
   { id: 7, name: 'Beauty Dish + grid', addName: 'EQUIPMENT_TYPES.BEAUTY_DISH', description: 'EQUIPMENT_DESCRIPTIONS.BEAUTY_DISH', src: '/images/equipment/8.png', alt: 'equipment-item' },
   { id: 8, name: '2 x Stripbox + grid 35x140 см', addName: 'EQUIPMENT_TYPES.STRIPBOX', description: 'EQUIPMENT_DESCRIPTIONS.STRIPBOX', src: '/images/equipment/9.png', alt: 'equipment-item' },
-  { id: 9, name: '2 x Softbox octa + grid 105 см', addName: 'EQUIPMENT_TYPES.OCTABOX', description: 'EQUIPMENT_DESCRIPTIONS.OCTABOX', src: '/images/equipment/12.png', alt: 'equipment-item' },
+  { id: 9, name: '2 x Softbox octa + grid 120 см', addName: 'EQUIPMENT_TYPES.OCTABOX', description: 'EQUIPMENT_DESCRIPTIONS.OCTABOX', src: '/images/equipment/12.png', alt: 'equipment-item' },
   { id: 10, name: 'Strumienica optyczna Godox BLP', addName: 'EQUIPMENT_TYPES.SPOTLIGHT', description: 'EQUIPMENT_DESCRIPTIONS.GODOX_BLP', src: '/images/equipment/14.png', alt: 'equipment-item' },
   { id: 11, name: 'Obiektywy do Godox BLP', addName: 'EQUIPMENT_TYPES.LENSES', description: 'EQUIPMENT_DESCRIPTIONS.GODOX_BLP_LENSES', src: '/images/equipment/6.png', alt: 'equipment-item' },
   { id: 12, name: 'Godox Gobo Set do Godox BLP', addName: 'EQUIPMENT_TYPES.GOBO_SET', description: 'EQUIPMENT_DESCRIPTIONS.GODOX_GOBO_SET', src: '/images/equipment/10.png', alt: 'equipment-item' },
