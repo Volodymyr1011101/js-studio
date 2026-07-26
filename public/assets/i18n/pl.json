@@ -29,12 +29,12 @@
   "cyklorama_description": "Duża cyklorama o długości 8 metrów z łagodnym przejściem w sufit — idealna do tworzenia różnorodnych ujęć podczas sesji zdjęciowych oraz nagrań wideo.",
   "light": "Światło naturalne",
   "light_description": "Naturalne światło z dużych okien oraz jasne, minimalistyczne wnętrze — dla miłośników naturalnego oświetlenia.",
-  "working_zone": "Strefy robocze",
+  "working_zone": "Strefa biznesowa",
   "working_zone_description": "Strefa do podcastów i pracy z wideo, wyposażona w profesjonalne oświetlenie studyjne oraz możliwość wypożyczenia kamer, mikrofonów i statywów.",
-  "decorations": "Dekoracje",
-  "decorations_description": "Dostosowane do różnych formatów sesji: rodzinnych, dziecięcych, portretów biznesowych, kreatywnych sesji indywidualnych, produktowych oraz kontentowych.",
-  "rent": "Wynajem",
-  "rent_description": "Strefa do podcastów i pracy z wideo, wyposażona w profesjonalne oświetlenie studyjne oraz możliwość wypożyczenia kamer, mikrofonów i statywów.",
+  "decorations": "Kuchnia",
+  "decorations_description": "To idealna przestrzeń do nagrywania filmów na YouTube oraz organizacji rodzinnych sesji zdjęciowych. Możesz tu tworzyć zarówno naturalne ujęcia kulinarne, jak i przytulne kadry z domową atmosferą.",
+  "rent": "Wypożyczalnia sprzętu",
+  "rent_description": "U nas możesz wypożyczyć aparaty, obiektywy, oświetlenie oraz inny sprzęt fotograficzny i filmowy – zarówno do pracy w studiu, jak i poza nim.",
   "courses": "Warsztaty i kursy fotograficzne",
   "courses_description": "Dla początkujących i praktykujących fotografów — możesz przyjść nawet bez własnego aparatu, o wszystko zadbamy!",
 
@@ -264,7 +264,7 @@
   },
   "AD600": "3 x Godox AD600 Pro",
   "AD600_description": "Niezwykle mocna (600J) profesjonalna \nlampa błyskowa z idealnym odwzorowaniem kolorów i \nbłyskawicznym ładowaniem. Stworzona do \ndynamicznych sesji fashion, reklamy i skomplikowanych \nschematów oświetleniowych.",
-  "assistant_description": "Jak to działa?\n - Pełne przygotowanie: Ty mówisz nam, jaki efekt chcesz osiągnąć (lub pokazujesz inspiracje/refki), a nasz asystent ustawia lampy na jej początku.\n - Brak stresu: Jeśli zupełnie nie masz doświadczenia ze światłem studyjnym — nie martw się. Pokażemy Ci, jak wszystko działa, i dostosujemy parametry do Twojego aparatu lub smartfona.\n - Oszczędność czasu: Nie tracisz 30 cennych minut rezerwacji na przestawianie statywów.\n\nKoszt usługi to tylko 50 PLN za całe rezerwacje (niezależnie od liczby godzin).Dodaj opcję „Asystent oświetlenia” podczas rezerwacji studia online i ciesz się idealnymi kadrami od pierwszego błysku!",
+  "assistant_description": "Masz pomysł na sesję, ale nie wiesz, jak ustawić światło? Pomożemy!\nAsystent oświetlenia za jedyne 50 zł za całą rezerwację. Nie musisz być profesjonalnym fotografem, aby zrobić zachwycające zdjęcia. Zamów usługę asystenta, a my zajmiemy się stroną techniczną. \n \n Jak to działa? \n \n - Pełne przygotowanie: Ty mówisz nam, jaki efekt chcesz osiągnąć (lub pokazujesz inspiracje/refki), a nasz asystent ustawia lampy na jej początku.\n \n - Brak stresu: Jeśli zupełnie nie masz doświadczenia ze światłem studyjnym — nie martw się. Pokażemy Ci, jak wszystko działa, i dostosujemy parametry do Twojego aparatu lub smartfona.\n \n - Oszczędność czasu: Nie tracisz 30 cennych minut rezerwacji na przestawianie statywów.\n\nKoszt usługi to tylko 50 PLN za całe rezerwacje (niezależnie od liczby godzin).Dodaj opcję „Asystent oświetlenia” podczas rezerwacji studia online i ciesz się idealnymi kadrami od pierwszego błysku!",
 
   "map": "Mapa"
 }

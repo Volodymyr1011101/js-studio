@@ -1,7 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {Hero} from '@app/components/hero/hero';
 import {ShortInfo} from '@app/components/short-info/short-info';
-import {DynamicRenderItem} from '@app/components/dynamic-render-item/dynamic-render-item';
 import {BrowserHelpersService} from '@app/services/browser-helpers.service';
 import {BaseComponent} from '@app/components/base-component';
 import {Map} from '@app/components/map/map';
@@ -17,7 +16,6 @@ import {TranslatePipe} from "@ngx-translate/core";
     imports: [
         Hero,
         ShortInfo,
-        DynamicRenderItem,
         Map,
         WhyWe,
         WhoWe,
