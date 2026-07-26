@@ -54,8 +54,16 @@ body .reservation-wrapper .bookero-plugin-header {
   background-color: #334d42;
 }
 
+.reservation-wrapper .submit-section .submit-button[data-v-17ba5f1e]:hover {
+  background-color: #334d42;
+}
+
 .reservation-wrapper .calendar-days-list-cell.is-valid[data-v-3f06ab0c] {
   color: #334d42;
+}
+
+.reservation-wrapper .switcher.is-active[data-v-b6e0c442] {
+  background-color: #334d42;
 }
 
 app-root {
