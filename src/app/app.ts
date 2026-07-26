@@ -11,6 +11,18 @@ import {Footer} from '@app/components/footer/footer';
   imports: [RouterOutlet, TranslateModule, Header, ScrollToTop, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
+  host: {
+    '[class.app-ready]': 'isTranslated()' // додаємо клас, коли переклад готовий
+  }
 })
 export class App {
+  private translate = inject(TranslateService);
+  isTranslated = signal(false);
+
+  constructor() {
+    // Чекаємо першого завантаження перекладів для прикриття ключиків
+    this.translate.get('EQUIPMENT_TYPES').subscribe(() => {
+      this.isTranslated.set(true);
+    });
+  }
 }

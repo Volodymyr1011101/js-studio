@@ -1,10 +1,12 @@
- <div class="card">
+<app-dynamic-render-item>
+  <div class="card">
     <p-accordion [value]="null">
-        <p-accordion-panel [value]="value">
-          <p-accordion-header [unstyled]="true" class="header">{{ title | translate }}</p-accordion-header>
-          <p-accordion-content class="content">
-            <p class="m-0">{{ content | translate }}</p>
-          </p-accordion-content>
-        </p-accordion-panel>
+      <p-accordion-panel [value]="value">
+        <p-accordion-header [unstyled]="true" class="header">{{ title | translate }}</p-accordion-header>
+        <p-accordion-content class="content">
+          <p class="m-0">{{ content | translate }}</p>
+        </p-accordion-content>
+      </p-accordion-panel>
     </p-accordion>
   </div>
+</app-dynamic-render-item>
