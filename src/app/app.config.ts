@@ -1,6 +1,5 @@
 import {
-  APP_INITIALIZER,
-  ApplicationConfig,
+  ApplicationConfig, inject, provideAppInitializer,
   provideBrowserGlobalErrorListeners,
   provideZonelessChangeDetection
 } from '@angular/core';
@@ -17,7 +16,7 @@ import {firstValueFrom} from 'rxjs';
 // Функція, яка завантажує переклад до старту додатку
 export function initializeTranslations(translate: TranslateService) {
   return () => {
-    translate.setDefaultLang('pl');
+    translate.setFallbackLang('pl');
 
     // firstValueFrom перетворює Observable від translate.use() на Promise
     return firstValueFrom(translate.use('pl'));
@@ -39,11 +38,17 @@ export const appConfig: ApplicationConfig = {
     }),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimations(),
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeTranslations,
-      deps: [TranslateService],
-      multi: true
-    }
+    provideAppInitializer(() => {
+      const translate = inject(TranslateService);
+      translate.setFallbackLang('pl');
+
+      // Чекаємо завантаження JSON по мережі
+      return firstValueFrom(translate.use('pl')).then(() => {
+        // Додаємо клас готовності на body тільки коли переклади НАЙШЛИ
+        if (typeof document !== 'undefined') {
+          document.body.classList.add('app-ready');
+        }
+      });
+    })
   ]
 };
