@@ -31,6 +31,14 @@ export const images: GalleryItem[] = [
   },
   {
     "alt": "Gallery image",
+    "src": "/images/gallery/8.webp",
+  },
+  {
+    "alt": "Gallery image",
+    "src": "/images/gallery/9.webp",
+  },
+  {
+    "alt": "Gallery image",
     "src": "/images/gallery/10.webp",
   },
   {
@@ -59,7 +67,15 @@ export const images: GalleryItem[] = [
   },
   {
     "alt": "Gallery image",
+    "src": "/images/gallery/17.webp",
+  },
+  {
+    "alt": "Gallery image",
     "src": "/images/gallery/18.webp",
+  },
+  {
+    "alt": "Gallery image",
+    "src": "/images/gallery/19.webp",
   },
   {
     "alt": "Gallery image",
@@ -80,33 +96,5 @@ export const images: GalleryItem[] = [
   {
     "alt": "Gallery image",
     "src": "/images/gallery/24.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/25.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/26.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/31.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/32.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/33.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/34.webp",
-  },
-  {
-    "alt": "Gallery image",
-    "src": "/images/gallery/35.webp",
   }
 ]
